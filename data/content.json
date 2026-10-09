@@ -271,27 +271,27 @@
                 "role": "TATTOO ARTIST",
                 "image": "/team/team-1.webp",
                 "experience": "8+ Years Experience",
-                "location": "Mumbai, Maharashtra",
+                "location": "Los Angeles, CA",
                 "instagramHandle": "@alexcarter_ink",
                 "biography": "Alex Carter is a passionate tattoo artist with over 8 years of experience in creating detailed and meaningful tattoos. His expertise lies in black & grey realism, portraits and custom designs. Alex believes that every tattoo tells a story, and he works closely with clients to bring their ideas to life with precision and creativity.",
                 "features": [
                   {
-                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 8v4a4 4 0 0 0 8 0V8\"/><path d=\"M8 8H5a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h3\"/><path d=\"M16 8h3a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-3\"/><path d=\"M12 22v-6\"/><path d=\"M10 22h4\"/><path d=\"M12 2v2\"/></svg>",
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9H4.5a2.5 2.5 0 0 1 0-5H6\"/><path d=\"M18 9h1.5a2.5 2.5 0 0 0 0-5H18\"/><path d=\"M4 22h16\"/><path d=\"M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22\"/><path d=\"M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22\"/><path d=\"M18 2H6v7a6 6 0 0 0 12 0V2Z\"/></svg>",
                     "title": "AWARD WINNING ARTIST",
                     "subtitle": "Recognized for creative excellence"
                   },
                   {
-                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2\"/><circle cx=\"9\" cy=\"7\" r=\"4\"/><path d=\"M22 21v-2a4 4 0 0 0-3-3.87\"/><path d=\"M16 3.13a4 4 0 0 1 0 7.75\"/></svg>",
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M22 20v-1a4 4 0 0 0-3-3.87\"/><path d=\"M16 3.13a4 4 0 0 1 0 7.75\"/><path d=\"M2 20v-1a4 4 0 0 1 3-3.87\"/><path d=\"M8 3.13a4 4 0 0 0 0 7.75\"/><path d=\"M15 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2\"/><circle cx=\"12\" cy=\"7\" r=\"4\"/></svg>",
                     "title": "PERSONAL CONSULTATION",
                     "subtitle": "Discuss your ideas and style"
                   },
                   {
-                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polygon points=\"12 2 2 7 12 22 22 7 12 2\"/></svg>",
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 3h12l4 6-10 13L2 9l4-6Z\"/><path d=\"M2 9h20\"/><path d=\"M12 22V9\"/><path d=\"M6 3l6 6\"/><path d=\"M18 3l-6 6\"/></svg>",
                     "title": "CUSTOM DESIGNS",
                     "subtitle": "Unique artwork tailored to you"
                   },
                   {
-                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/><path d=\"m9 12 2 2 4-4\"/></svg>",
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/><path d=\"m9 12 2 2 4-4\"/></svg>",
                     "title": "SAFE & HYGIENIC STUDIO",
                     "subtitle": "Your safety is our priority"
                   }
@@ -346,27 +346,27 @@
                   }
                 ],
                 "experience": "5+ Years Experience",
-                "location": "Mumbai, Maharashtra",
+                "location": "Los Angeles, CA",
                 "instagramHandle": "@sophiareed_ink",
                 "biography": "SOPHIA REED is a passionate tattoo artist with over 5 years of experience in creating detailed and meaningful tattoos. Expertise lies in various styles and custom designs, working closely with clients to bring their ideas to life with precision and creativity.",
                 "features": [
                   {
-                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 8v4a4 4 0 0 0 8 0V8\"/><path d=\"M8 8H5a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h3\"/><path d=\"M16 8h3a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-3\"/><path d=\"M12 22v-6\"/><path d=\"M10 22h4\"/><path d=\"M12 2v2\"/></svg>",
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9H4.5a2.5 2.5 0 0 1 0-5H6\"/><path d=\"M18 9h1.5a2.5 2.5 0 0 0 0-5H18\"/><path d=\"M4 22h16\"/><path d=\"M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22\"/><path d=\"M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22\"/><path d=\"M18 2H6v7a6 6 0 0 0 12 0V2Z\"/></svg>",
                     "title": "AWARD WINNING ARTIST",
                     "subtitle": "Recognized for creative excellence"
                   },
                   {
-                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2\"/><circle cx=\"9\" cy=\"7\" r=\"4\"/><path d=\"M22 21v-2a4 4 0 0 0-3-3.87\"/><path d=\"M16 3.13a4 4 0 0 1 0 7.75\"/></svg>",
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M22 20v-1a4 4 0 0 0-3-3.87\"/><path d=\"M16 3.13a4 4 0 0 1 0 7.75\"/><path d=\"M2 20v-1a4 4 0 0 1 3-3.87\"/><path d=\"M8 3.13a4 4 0 0 0 0 7.75\"/><path d=\"M15 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2\"/><circle cx=\"12\" cy=\"7\" r=\"4\"/></svg>",
                     "title": "PERSONAL CONSULTATION",
                     "subtitle": "Discuss your ideas and style"
                   },
                   {
-                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polygon points=\"12 2 2 7 12 22 22 7 12 2\"/></svg>",
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 3h12l4 6-10 13L2 9l4-6Z\"/><path d=\"M2 9h20\"/><path d=\"M12 22V9\"/><path d=\"M6 3l6 6\"/><path d=\"M18 3l-6 6\"/></svg>",
                     "title": "CUSTOM DESIGNS",
                     "subtitle": "Unique artwork tailored to you"
                   },
                   {
-                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/><path d=\"m9 12 2 2 4-4\"/></svg>",
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/><path d=\"m9 12 2 2 4-4\"/></svg>",
                     "title": "SAFE & HYGIENIC STUDIO",
                     "subtitle": "Your safety is our priority"
                   }
@@ -404,27 +404,27 @@
                   }
                 ],
                 "experience": "5+ Years Experience",
-                "location": "Mumbai, Maharashtra",
+                "location": "Los Angeles, CA",
                 "instagramHandle": "@jasonmiller_ink",
                 "biography": "JASON MILLER is a passionate tattoo artist with over 5 years of experience in creating detailed and meaningful tattoos. Expertise lies in various styles and custom designs, working closely with clients to bring their ideas to life with precision and creativity.",
                 "features": [
                   {
-                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 8v4a4 4 0 0 0 8 0V8\"/><path d=\"M8 8H5a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h3\"/><path d=\"M16 8h3a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-3\"/><path d=\"M12 22v-6\"/><path d=\"M10 22h4\"/><path d=\"M12 2v2\"/></svg>",
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9H4.5a2.5 2.5 0 0 1 0-5H6\"/><path d=\"M18 9h1.5a2.5 2.5 0 0 0 0-5H18\"/><path d=\"M4 22h16\"/><path d=\"M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22\"/><path d=\"M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22\"/><path d=\"M18 2H6v7a6 6 0 0 0 12 0V2Z\"/></svg>",
                     "title": "AWARD WINNING ARTIST",
                     "subtitle": "Recognized for creative excellence"
                   },
                   {
-                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2\"/><circle cx=\"9\" cy=\"7\" r=\"4\"/><path d=\"M22 21v-2a4 4 0 0 0-3-3.87\"/><path d=\"M16 3.13a4 4 0 0 1 0 7.75\"/></svg>",
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M22 20v-1a4 4 0 0 0-3-3.87\"/><path d=\"M16 3.13a4 4 0 0 1 0 7.75\"/><path d=\"M2 20v-1a4 4 0 0 1 3-3.87\"/><path d=\"M8 3.13a4 4 0 0 0 0 7.75\"/><path d=\"M15 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2\"/><circle cx=\"12\" cy=\"7\" r=\"4\"/></svg>",
                     "title": "PERSONAL CONSULTATION",
                     "subtitle": "Discuss your ideas and style"
                   },
                   {
-                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polygon points=\"12 2 2 7 12 22 22 7 12 2\"/></svg>",
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 3h12l4 6-10 13L2 9l4-6Z\"/><path d=\"M2 9h20\"/><path d=\"M12 22V9\"/><path d=\"M6 3l6 6\"/><path d=\"M18 3l-6 6\"/></svg>",
                     "title": "CUSTOM DESIGNS",
                     "subtitle": "Unique artwork tailored to you"
                   },
                   {
-                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/><path d=\"m9 12 2 2 4-4\"/></svg>",
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/><path d=\"m9 12 2 2 4-4\"/></svg>",
                     "title": "SAFE & HYGIENIC STUDIO",
                     "subtitle": "Your safety is our priority"
                   }
@@ -462,27 +462,27 @@
                   }
                 ],
                 "experience": "5+ Years Experience",
-                "location": "Mumbai, Maharashtra",
+                "location": "Los Angeles, CA",
                 "instagramHandle": "@emmawilson_ink",
                 "biography": "EMMA WILSON is a passionate tattoo artist with over 5 years of experience in creating detailed and meaningful tattoos. Expertise lies in various styles and custom designs, working closely with clients to bring their ideas to life with precision and creativity.",
                 "features": [
                   {
-                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 8v4a4 4 0 0 0 8 0V8\"/><path d=\"M8 8H5a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h3\"/><path d=\"M16 8h3a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-3\"/><path d=\"M12 22v-6\"/><path d=\"M10 22h4\"/><path d=\"M12 2v2\"/></svg>",
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9H4.5a2.5 2.5 0 0 1 0-5H6\"/><path d=\"M18 9h1.5a2.5 2.5 0 0 0 0-5H18\"/><path d=\"M4 22h16\"/><path d=\"M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22\"/><path d=\"M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22\"/><path d=\"M18 2H6v7a6 6 0 0 0 12 0V2Z\"/></svg>",
                     "title": "AWARD WINNING ARTIST",
                     "subtitle": "Recognized for creative excellence"
                   },
                   {
-                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2\"/><circle cx=\"9\" cy=\"7\" r=\"4\"/><path d=\"M22 21v-2a4 4 0 0 0-3-3.87\"/><path d=\"M16 3.13a4 4 0 0 1 0 7.75\"/></svg>",
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M22 20v-1a4 4 0 0 0-3-3.87\"/><path d=\"M16 3.13a4 4 0 0 1 0 7.75\"/><path d=\"M2 20v-1a4 4 0 0 1 3-3.87\"/><path d=\"M8 3.13a4 4 0 0 0 0 7.75\"/><path d=\"M15 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2\"/><circle cx=\"12\" cy=\"7\" r=\"4\"/></svg>",
                     "title": "PERSONAL CONSULTATION",
                     "subtitle": "Discuss your ideas and style"
                   },
                   {
-                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polygon points=\"12 2 2 7 12 22 22 7 12 2\"/></svg>",
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 3h12l4 6-10 13L2 9l4-6Z\"/><path d=\"M2 9h20\"/><path d=\"M12 22V9\"/><path d=\"M6 3l6 6\"/><path d=\"M18 3l-6 6\"/></svg>",
                     "title": "CUSTOM DESIGNS",
                     "subtitle": "Unique artwork tailored to you"
                   },
                   {
-                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/><path d=\"m9 12 2 2 4-4\"/></svg>",
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/><path d=\"m9 12 2 2 4-4\"/></svg>",
                     "title": "SAFE & HYGIENIC STUDIO",
                     "subtitle": "Your safety is our priority"
                   }
@@ -520,27 +520,27 @@
                   }
                 ],
                 "experience": "5+ Years Experience",
-                "location": "Mumbai, Maharashtra",
+                "location": "Los Angeles, CA",
                 "instagramHandle": "@chrisevans_ink",
                 "biography": "CHRIS EVANS is a passionate tattoo artist with over 5 years of experience in creating detailed and meaningful tattoos. Expertise lies in various styles and custom designs, working closely with clients to bring their ideas to life with precision and creativity.",
                 "features": [
                   {
-                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 8v4a4 4 0 0 0 8 0V8\"/><path d=\"M8 8H5a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h3\"/><path d=\"M16 8h3a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-3\"/><path d=\"M12 22v-6\"/><path d=\"M10 22h4\"/><path d=\"M12 2v2\"/></svg>",
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9H4.5a2.5 2.5 0 0 1 0-5H6\"/><path d=\"M18 9h1.5a2.5 2.5 0 0 0 0-5H18\"/><path d=\"M4 22h16\"/><path d=\"M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22\"/><path d=\"M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22\"/><path d=\"M18 2H6v7a6 6 0 0 0 12 0V2Z\"/></svg>",
                     "title": "AWARD WINNING ARTIST",
                     "subtitle": "Recognized for creative excellence"
                   },
                   {
-                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2\"/><circle cx=\"9\" cy=\"7\" r=\"4\"/><path d=\"M22 21v-2a4 4 0 0 0-3-3.87\"/><path d=\"M16 3.13a4 4 0 0 1 0 7.75\"/></svg>",
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M22 20v-1a4 4 0 0 0-3-3.87\"/><path d=\"M16 3.13a4 4 0 0 1 0 7.75\"/><path d=\"M2 20v-1a4 4 0 0 1 3-3.87\"/><path d=\"M8 3.13a4 4 0 0 0 0 7.75\"/><path d=\"M15 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2\"/><circle cx=\"12\" cy=\"7\" r=\"4\"/></svg>",
                     "title": "PERSONAL CONSULTATION",
                     "subtitle": "Discuss your ideas and style"
                   },
                   {
-                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polygon points=\"12 2 2 7 12 22 22 7 12 2\"/></svg>",
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 3h12l4 6-10 13L2 9l4-6Z\"/><path d=\"M2 9h20\"/><path d=\"M12 22V9\"/><path d=\"M6 3l6 6\"/><path d=\"M18 3l-6 6\"/></svg>",
                     "title": "CUSTOM DESIGNS",
                     "subtitle": "Unique artwork tailored to you"
                   },
                   {
-                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/><path d=\"m9 12 2 2 4-4\"/></svg>",
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/><path d=\"m9 12 2 2 4-4\"/></svg>",
                     "title": "SAFE & HYGIENIC STUDIO",
                     "subtitle": "Your safety is our priority"
                   }
@@ -578,27 +578,27 @@
                   }
                 ],
                 "experience": "5+ Years Experience",
-                "location": "Mumbai, Maharashtra",
+                "location": "Los Angeles, CA",
                 "instagramHandle": "@davidclark_ink",
                 "biography": "DAVID CLARK is a passionate tattoo artist with over 5 years of experience in creating detailed and meaningful tattoos. Expertise lies in various styles and custom designs, working closely with clients to bring their ideas to life with precision and creativity.",
                 "features": [
                   {
-                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 8v4a4 4 0 0 0 8 0V8\"/><path d=\"M8 8H5a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h3\"/><path d=\"M16 8h3a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-3\"/><path d=\"M12 22v-6\"/><path d=\"M10 22h4\"/><path d=\"M12 2v2\"/></svg>",
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9H4.5a2.5 2.5 0 0 1 0-5H6\"/><path d=\"M18 9h1.5a2.5 2.5 0 0 0 0-5H18\"/><path d=\"M4 22h16\"/><path d=\"M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22\"/><path d=\"M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22\"/><path d=\"M18 2H6v7a6 6 0 0 0 12 0V2Z\"/></svg>",
                     "title": "AWARD WINNING ARTIST",
                     "subtitle": "Recognized for creative excellence"
                   },
                   {
-                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2\"/><circle cx=\"9\" cy=\"7\" r=\"4\"/><path d=\"M22 21v-2a4 4 0 0 0-3-3.87\"/><path d=\"M16 3.13a4 4 0 0 1 0 7.75\"/></svg>",
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M22 20v-1a4 4 0 0 0-3-3.87\"/><path d=\"M16 3.13a4 4 0 0 1 0 7.75\"/><path d=\"M2 20v-1a4 4 0 0 1 3-3.87\"/><path d=\"M8 3.13a4 4 0 0 0 0 7.75\"/><path d=\"M15 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2\"/><circle cx=\"12\" cy=\"7\" r=\"4\"/></svg>",
                     "title": "PERSONAL CONSULTATION",
                     "subtitle": "Discuss your ideas and style"
                   },
                   {
-                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polygon points=\"12 2 2 7 12 22 22 7 12 2\"/></svg>",
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 3h12l4 6-10 13L2 9l4-6Z\"/><path d=\"M2 9h20\"/><path d=\"M12 22V9\"/><path d=\"M6 3l6 6\"/><path d=\"M18 3l-6 6\"/></svg>",
                     "title": "CUSTOM DESIGNS",
                     "subtitle": "Unique artwork tailored to you"
                   },
                   {
-                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/><path d=\"m9 12 2 2 4-4\"/></svg>",
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/><path d=\"m9 12 2 2 4-4\"/></svg>",
                     "title": "SAFE & HYGIENIC STUDIO",
                     "subtitle": "Your safety is our priority"
                   }
@@ -636,27 +636,27 @@
                   }
                 ],
                 "experience": "5+ Years Experience",
-                "location": "Mumbai, Maharashtra",
+                "location": "Los Angeles, CA",
                 "instagramHandle": "@lucasanderson_ink",
                 "biography": "LUCAS ANDERSON is a passionate tattoo artist with over 5 years of experience in creating detailed and meaningful tattoos. Expertise lies in various styles and custom designs, working closely with clients to bring their ideas to life with precision and creativity.",
                 "features": [
                   {
-                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 8v4a4 4 0 0 0 8 0V8\"/><path d=\"M8 8H5a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h3\"/><path d=\"M16 8h3a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-3\"/><path d=\"M12 22v-6\"/><path d=\"M10 22h4\"/><path d=\"M12 2v2\"/></svg>",
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9H4.5a2.5 2.5 0 0 1 0-5H6\"/><path d=\"M18 9h1.5a2.5 2.5 0 0 0 0-5H18\"/><path d=\"M4 22h16\"/><path d=\"M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22\"/><path d=\"M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22\"/><path d=\"M18 2H6v7a6 6 0 0 0 12 0V2Z\"/></svg>",
                     "title": "AWARD WINNING ARTIST",
                     "subtitle": "Recognized for creative excellence"
                   },
                   {
-                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2\"/><circle cx=\"9\" cy=\"7\" r=\"4\"/><path d=\"M22 21v-2a4 4 0 0 0-3-3.87\"/><path d=\"M16 3.13a4 4 0 0 1 0 7.75\"/></svg>",
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M22 20v-1a4 4 0 0 0-3-3.87\"/><path d=\"M16 3.13a4 4 0 0 1 0 7.75\"/><path d=\"M2 20v-1a4 4 0 0 1 3-3.87\"/><path d=\"M8 3.13a4 4 0 0 0 0 7.75\"/><path d=\"M15 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2\"/><circle cx=\"12\" cy=\"7\" r=\"4\"/></svg>",
                     "title": "PERSONAL CONSULTATION",
                     "subtitle": "Discuss your ideas and style"
                   },
                   {
-                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polygon points=\"12 2 2 7 12 22 22 7 12 2\"/></svg>",
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 3h12l4 6-10 13L2 9l4-6Z\"/><path d=\"M2 9h20\"/><path d=\"M12 22V9\"/><path d=\"M6 3l6 6\"/><path d=\"M18 3l-6 6\"/></svg>",
                     "title": "CUSTOM DESIGNS",
                     "subtitle": "Unique artwork tailored to you"
                   },
                   {
-                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/><path d=\"m9 12 2 2 4-4\"/></svg>",
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/><path d=\"m9 12 2 2 4-4\"/></svg>",
                     "title": "SAFE & HYGIENIC STUDIO",
                     "subtitle": "Your safety is our priority"
                   }
@@ -694,27 +694,27 @@
                   }
                 ],
                 "experience": "5+ Years Experience",
-                "location": "Mumbai, Maharashtra",
+                "location": "Los Angeles, CA",
                 "instagramHandle": "@miataylor_ink",
                 "biography": "MIA TAYLOR is a passionate tattoo artist with over 5 years of experience in creating detailed and meaningful tattoos. Expertise lies in various styles and custom designs, working closely with clients to bring their ideas to life with precision and creativity.",
                 "features": [
                   {
-                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 8v4a4 4 0 0 0 8 0V8\"/><path d=\"M8 8H5a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h3\"/><path d=\"M16 8h3a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-3\"/><path d=\"M12 22v-6\"/><path d=\"M10 22h4\"/><path d=\"M12 2v2\"/></svg>",
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9H4.5a2.5 2.5 0 0 1 0-5H6\"/><path d=\"M18 9h1.5a2.5 2.5 0 0 0 0-5H18\"/><path d=\"M4 22h16\"/><path d=\"M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22\"/><path d=\"M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22\"/><path d=\"M18 2H6v7a6 6 0 0 0 12 0V2Z\"/></svg>",
                     "title": "AWARD WINNING ARTIST",
                     "subtitle": "Recognized for creative excellence"
                   },
                   {
-                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2\"/><circle cx=\"9\" cy=\"7\" r=\"4\"/><path d=\"M22 21v-2a4 4 0 0 0-3-3.87\"/><path d=\"M16 3.13a4 4 0 0 1 0 7.75\"/></svg>",
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M22 20v-1a4 4 0 0 0-3-3.87\"/><path d=\"M16 3.13a4 4 0 0 1 0 7.75\"/><path d=\"M2 20v-1a4 4 0 0 1 3-3.87\"/><path d=\"M8 3.13a4 4 0 0 0 0 7.75\"/><path d=\"M15 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2\"/><circle cx=\"12\" cy=\"7\" r=\"4\"/></svg>",
                     "title": "PERSONAL CONSULTATION",
                     "subtitle": "Discuss your ideas and style"
                   },
                   {
-                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polygon points=\"12 2 2 7 12 22 22 7 12 2\"/></svg>",
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 3h12l4 6-10 13L2 9l4-6Z\"/><path d=\"M2 9h20\"/><path d=\"M12 22V9\"/><path d=\"M6 3l6 6\"/><path d=\"M18 3l-6 6\"/></svg>",
                     "title": "CUSTOM DESIGNS",
                     "subtitle": "Unique artwork tailored to you"
                   },
                   {
-                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/><path d=\"m9 12 2 2 4-4\"/></svg>",
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/><path d=\"m9 12 2 2 4-4\"/></svg>",
                     "title": "SAFE & HYGIENIC STUDIO",
                     "subtitle": "Your safety is our priority"
                   }
@@ -752,27 +752,27 @@
                   }
                 ],
                 "experience": "5+ Years Experience",
-                "location": "Mumbai, Maharashtra",
+                "location": "Los Angeles, CA",
                 "instagramHandle": "@jamesrodriguez_ink",
                 "biography": "JAMES RODRIGUEZ is a passionate tattoo artist with over 5 years of experience in creating detailed and meaningful tattoos. Expertise lies in various styles and custom designs, working closely with clients to bring their ideas to life with precision and creativity.",
                 "features": [
                   {
-                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 8v4a4 4 0 0 0 8 0V8\"/><path d=\"M8 8H5a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h3\"/><path d=\"M16 8h3a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-3\"/><path d=\"M12 22v-6\"/><path d=\"M10 22h4\"/><path d=\"M12 2v2\"/></svg>",
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9H4.5a2.5 2.5 0 0 1 0-5H6\"/><path d=\"M18 9h1.5a2.5 2.5 0 0 0 0-5H18\"/><path d=\"M4 22h16\"/><path d=\"M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22\"/><path d=\"M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22\"/><path d=\"M18 2H6v7a6 6 0 0 0 12 0V2Z\"/></svg>",
                     "title": "AWARD WINNING ARTIST",
                     "subtitle": "Recognized for creative excellence"
                   },
                   {
-                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2\"/><circle cx=\"9\" cy=\"7\" r=\"4\"/><path d=\"M22 21v-2a4 4 0 0 0-3-3.87\"/><path d=\"M16 3.13a4 4 0 0 1 0 7.75\"/></svg>",
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M22 20v-1a4 4 0 0 0-3-3.87\"/><path d=\"M16 3.13a4 4 0 0 1 0 7.75\"/><path d=\"M2 20v-1a4 4 0 0 1 3-3.87\"/><path d=\"M8 3.13a4 4 0 0 0 0 7.75\"/><path d=\"M15 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2\"/><circle cx=\"12\" cy=\"7\" r=\"4\"/></svg>",
                     "title": "PERSONAL CONSULTATION",
                     "subtitle": "Discuss your ideas and style"
                   },
                   {
-                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polygon points=\"12 2 2 7 12 22 22 7 12 2\"/></svg>",
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 3h12l4 6-10 13L2 9l4-6Z\"/><path d=\"M2 9h20\"/><path d=\"M12 22V9\"/><path d=\"M6 3l6 6\"/><path d=\"M18 3l-6 6\"/></svg>",
                     "title": "CUSTOM DESIGNS",
                     "subtitle": "Unique artwork tailored to you"
                   },
                   {
-                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/><path d=\"m9 12 2 2 4-4\"/></svg>",
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/><path d=\"m9 12 2 2 4-4\"/></svg>",
                     "title": "SAFE & HYGIENIC STUDIO",
                     "subtitle": "Your safety is our priority"
                   }
@@ -810,27 +810,27 @@
                   }
                 ],
                 "experience": "5+ Years Experience",
-                "location": "Mumbai, Maharashtra",
+                "location": "Los Angeles, CA",
                 "instagramHandle": "@sarahmiller_ink",
                 "biography": "SARAH MILLER is a passionate tattoo artist with over 5 years of experience in creating detailed and meaningful tattoos. Expertise lies in various styles and custom designs, working closely with clients to bring their ideas to life with precision and creativity.",
                 "features": [
                   {
-                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M8 8v4a4 4 0 0 0 8 0V8\"/><path d=\"M8 8H5a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h3\"/><path d=\"M16 8h3a2 2 0 0 1 2 2v2a2 2 0 0 1-2 2h-3\"/><path d=\"M12 22v-6\"/><path d=\"M10 22h4\"/><path d=\"M12 2v2\"/></svg>",
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 9H4.5a2.5 2.5 0 0 1 0-5H6\"/><path d=\"M18 9h1.5a2.5 2.5 0 0 0 0-5H18\"/><path d=\"M4 22h16\"/><path d=\"M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22\"/><path d=\"M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22\"/><path d=\"M18 2H6v7a6 6 0 0 0 12 0V2Z\"/></svg>",
                     "title": "AWARD WINNING ARTIST",
                     "subtitle": "Recognized for creative excellence"
                   },
                   {
-                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2\"/><circle cx=\"9\" cy=\"7\" r=\"4\"/><path d=\"M22 21v-2a4 4 0 0 0-3-3.87\"/><path d=\"M16 3.13a4 4 0 0 1 0 7.75\"/></svg>",
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M22 20v-1a4 4 0 0 0-3-3.87\"/><path d=\"M16 3.13a4 4 0 0 1 0 7.75\"/><path d=\"M2 20v-1a4 4 0 0 1 3-3.87\"/><path d=\"M8 3.13a4 4 0 0 0 0 7.75\"/><path d=\"M15 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2\"/><circle cx=\"12\" cy=\"7\" r=\"4\"/></svg>",
                     "title": "PERSONAL CONSULTATION",
                     "subtitle": "Discuss your ideas and style"
                   },
                   {
-                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><polygon points=\"12 2 2 7 12 22 22 7 12 2\"/></svg>",
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 3h12l4 6-10 13L2 9l4-6Z\"/><path d=\"M2 9h20\"/><path d=\"M12 22V9\"/><path d=\"M6 3l6 6\"/><path d=\"M18 3l-6 6\"/></svg>",
                     "title": "CUSTOM DESIGNS",
                     "subtitle": "Unique artwork tailored to you"
                   },
                   {
-                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/><path d=\"m9 12 2 2 4-4\"/></svg>",
+                    "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/><path d=\"m9 12 2 2 4-4\"/></svg>",
                     "title": "SAFE & HYGIENIC STUDIO",
                     "subtitle": "Your safety is our priority"
                   }
@@ -1200,39 +1200,66 @@
             "pages": {
               "about": {
                 "title": "ABOUT US",
-                "breadcrumb": ["HOME", "ABOUT"]
+                "breadcrumb": [
+                  "HOME",
+                  "ABOUT"
+                ]
               },
               "services": {
                 "title": "OUR SERVICES",
-                "breadcrumb": ["HOME", "SERVICES"]
+                "breadcrumb": [
+                  "HOME",
+                  "SERVICES"
+                ]
               },
               "artists": {
                 "title": "OUR ARTISTS",
-                "breadcrumb": ["HOME", "ARTISTS"]
+                "breadcrumb": [
+                  "HOME",
+                  "ARTISTS"
+                ]
               },
               "gallery": {
                 "title": "GALLERY",
-                "breadcrumb": ["HOME", "GALLERY"]
+                "breadcrumb": [
+                  "HOME",
+                  "GALLERY"
+                ]
               },
               "blogs": {
                 "title": "BLOGS",
-                "breadcrumb": ["HOME", "BLOGS"]
+                "breadcrumb": [
+                  "HOME",
+                  "BLOGS"
+                ]
               },
               "contact": {
                 "title": "CONTACT US",
-                "breadcrumb": ["HOME", "CONTACT"]
+                "breadcrumb": [
+                  "HOME",
+                  "CONTACT"
+                ]
               },
               "team": {
                 "title": "OUR TEAM",
-                "breadcrumb": ["HOME", "TEAM"]
+                "breadcrumb": [
+                  "HOME",
+                  "TEAM"
+                ]
               },
               "team-detail": {
                 "title": "TEAM DETAIL",
-                "breadcrumb": ["HOME", "TEAM DETAIL"]
+                "breadcrumb": [
+                  "HOME",
+                  "TEAM DETAIL"
+                ]
               },
               "blog details": {
                 "title": "Blog Details",
-                "breadcrumb": ["Home", "Blogs"]
+                "breadcrumb": [
+                  "Home",
+                  "Blogs"
+                ]
               }
             }
           }
@@ -3162,7 +3189,11 @@
             "formTitleLine1": "BOOK A",
             "formTitleLine2": "CONSULTATION",
             "formDescription": "Fill out the form below and our team will get in touch with you shortly to discuss your ideas, design preferences and appointment details.",
-            "services": ["TATTOOING", "PIERCING", "LASER REMOVAL"],
+            "services": [
+              "TATTOOING",
+              "PIERCING",
+              "LASER REMOVAL"
+            ],
             "fields": {
               "name": {
                 "label": "Full Name",
