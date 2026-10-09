@@ -110,11 +110,29 @@ export interface TeamSocialLink {
   url: string;
 }
 
+export interface TeamFeature {
+  icon: string;
+  title: string;
+  subtitle: string;
+}
+
 export interface TeamMember {
+  id?: string;
   name: string;
   role: string;
   image: string;
   socials: TeamSocialLink[];
+  experience?: string;
+  location?: string;
+  instagramHandle?: string;
+  biography?: string;
+  aboutSubtitle?: string;
+  aboutTitleLine1?: string;
+  aboutTitleLine2?: string;
+  aboutText?: string[];
+  quote?: string;
+  quoteImage?: string;
+  features?: TeamFeature[];
 }
 
 export interface TeamVariant {
@@ -123,6 +141,8 @@ export interface TeamVariant {
   titleLine2: string;
   description: string;
   members: TeamMember[];
+  buttonText?: string;
+  buttonLink?: string;
 }
 
 export interface CTAButton {
@@ -139,6 +159,24 @@ export interface CTAVariant {
   description: string;
   buttons: CTAButton[];
   image: string;
+}
+
+export interface BlogItem {
+  image: string;
+  tag: string;
+  date: string;
+  title: string;
+  description: string;
+  link: string;
+}
+
+export interface BlogsVariant {
+  subtitle: string;
+  titleLine1: string;
+  titleLine2: string;
+  blogs: BlogItem[];
+  buttonText: string;
+  buttonLink: string;
 }
 
 export interface Testimonial {
@@ -163,6 +201,7 @@ export interface FooterContact {
   address: string;
   phone: string;
   email: string;
+  whatsapp?: string;
 }
 
 export interface FooterVariant {
@@ -187,6 +226,16 @@ export interface FooterVariant {
   };
 }
 
+export interface PageBannerVariant {
+  image: string;
+  pages: {
+    [key: string]: {
+      title: string;
+      breadcrumb: string[];
+    };
+  };
+}
+
 export interface ContentData {
   Tattoo: {
     templateComponents: {
@@ -195,6 +244,10 @@ export interface ContentData {
           Topbar: string;
           Header: string;
           Footer: string;
+          PageBanner: string;
+          Contact?: string;
+          Appointment?: string;
+          AppointmentFeatures?: string;
         };
         pages: {
           home: {
@@ -206,7 +259,20 @@ export interface ContentData {
             Testimonials: string;
             Stats: string;
             CTA: string;
-          }
+            Blogs: string;
+          };
+          team?: {
+            Team: string;
+          };
+          about?: {
+            About: string;
+            Process: string;
+            Stats: string;
+            CTA: string;
+          };
+          gallery?: {
+            Gallery: string;
+          };
         }
       }
     };
@@ -261,11 +327,109 @@ export interface ContentData {
           [key: string]: CTAVariant;
         }
       };
+      Blogs: {
+        variants: {
+          [key: string]: BlogsVariant;
+        }
+      };
       Footer: {
         variants: {
           [key: string]: FooterVariant;
         }
       };
+      PageBanner: {
+        variants: {
+          [key: string]: PageBannerVariant;
+        }
+      };
+      Contact?: {
+        variants: {
+          [key: string]: ContactVariant;
+        }
+      };
+      Appointment?: {
+        variants: {
+          [key: string]: AppointmentVariant;
+        }
+      };
+      AppointmentFeatures?: {
+        variants: {
+          [key: string]: AppointmentFeaturesVariant;
+        }
+      };
     };
   }
+}
+
+export interface ContactField {
+  label: string;
+  placeholder: string;
+}
+
+export interface ContactVariant {
+  subtitle: string;
+  titleLine1: string;
+  titleLine2: string;
+  description: string;
+  backgroundImage: string;
+  contactItems: { label: string; value: string }[];
+  followUsLabel: string;
+  formSubtitle: string;
+  formTitleLine1: string;
+  formTitleLine2: string;
+  formDescription: string;
+  services: string[];
+  fields: {
+    name: ContactField;
+    phone: ContactField;
+    email: ContactField;
+    service: ContactField;
+    message: ContactField;
+  };
+  map?: {
+    address: string;
+    iframeSrc: string;
+  };
+  submitButton: string;
+  successTitle: string;
+  successMessage: string;
+}
+
+export interface AppointmentFeature {
+  icon: string;
+  title: string;
+  description: string;
+}
+
+export interface AppointmentVariant {
+  subtitle: string;
+  titleLine1: string;
+  titleLine2: string;
+  description: string;
+  features: AppointmentFeature[];
+  formSubtitle: string;
+  formTitleLine1: string;
+  formTitleLine2: string;
+  formDescription: string;
+  fields: {
+    name: ContactField;
+    phone: ContactField;
+    email: ContactField;
+    time: ContactField;
+    date: ContactField;
+    artist: ContactField;
+    service: ContactField;
+    message: ContactField;
+  };
+  submitButton: string;
+  successTitle: string;
+  successMessage: string;
+}
+
+export interface AppointmentFeaturesVariant {
+  features: {
+    icon: string;
+    title: string;
+    description: string;
+  }[];
 }

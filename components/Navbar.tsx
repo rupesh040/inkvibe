@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 import { MapPin, Phone, Mail, ChevronDown, ArrowRight, Menu, X } from 'lucide-react';
 import { motion, AnimatePresence, Variants } from 'framer-motion';
 import contentData from '@/data/content.json';
@@ -41,6 +42,7 @@ const navItemVariants: Variants = {
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
   const shared = typedContentData.Tattoo.templateComponents["template-1"].shared;
   const topBar = typedContentData.Tattoo.sections.Topbar.variants[shared.Topbar];
   const mainNav = typedContentData.Tattoo.sections.Header.variants[shared.Header];
@@ -116,6 +118,7 @@ export default function Navbar() {
                 src={mainNav.logo} 
                 alt="Logo" 
                 fill 
+                sizes="(max-width: 768px) 120px, 150px"
                 className="object-contain" 
                 priority
               />
@@ -129,28 +132,29 @@ export default function Navbar() {
           animate="visible"
           className="hidden md:flex items-center space-x-8"
         >
-          {mainNav.links.map((link, idx) => (
+          {mainNav.links.map((link, idx) => {
+            const active = link.href === '/' ? pathname === '/' : pathname.startsWith(link.href);
+            return (
             <motion.div key={idx} variants={navItemVariants}>
               <Link
                 href={link.href}
                 className={`group relative text-sm font-semibold tracking-wider flex items-center transition-colors ${
-                  link.active ? 'text-red-600' : 'text-white hover:text-red-500'
+                  active ? 'text-red-600' : 'text-white hover:text-red-500'
                 }`}
               >
                 {link.name}
-                {link.hasDropdown && <ChevronDown className="ml-1 w-4 h-4 group-hover:rotate-180 transition-transform duration-300" />}
-                {link.active && (
+                {active && (
                   <motion.div 
                     layoutId="underline"
                     className="absolute -bottom-1 left-0 w-full h-[2px] bg-red-600 rounded-full" 
                   />
                 )}
-                {!link.active && (
+                {!active && (
                   <div className="absolute -bottom-1 left-0 w-0 h-[2px] bg-red-500 rounded-full transition-all duration-300 group-hover:w-full" />
                 )}
               </Link>
             </motion.div>
-          ))}
+          )})}
         </motion.div>
 
         <motion.div 
@@ -162,8 +166,8 @@ export default function Navbar() {
           <div className="w-px h-8 bg-white/20" />
           <motion.div whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.95 }}>
             <Link
-              href="#"
-              className="relative overflow-hidden group bg-red-600 text-white text-sm font-bold tracking-wider px-6 py-3 flex items-center rounded-sm"
+              href="/contact"
+              className="relative overflow-hidden group bg-red-600 text-white text-sm font-semibold tracking-wider px-6 py-3 flex items-center rounded-sm"
             >
               <span className="relative z-10 flex items-center">
                 {mainNav.button}
@@ -211,25 +215,26 @@ export default function Navbar() {
               variants={navContainerVariants}
               className="flex flex-col px-6 py-4 space-y-4"
             >
-              {mainNav.links.map((link, idx) => (
+              {mainNav.links.map((link, idx) => {
+                const active = link.href === '/' ? pathname === '/' : pathname.startsWith(link.href);
+                return (
                 <motion.div key={idx} variants={navItemVariants}>
                   <Link
                     href={link.href}
                     onClick={() => setIsOpen(false)}
-                    className={`text-sm font-semibold tracking-wider flex items-center justify-between ${
-                      link.active ? 'text-red-600' : 'text-white'
+                    className={`text-sm font-normal tracking-wider flex items-center justify-between ${
+                      active ? 'text-red-600' : 'text-white'
                     }`}
                   >
                     {link.name}
-                    {link.hasDropdown && <ChevronDown className="w-4 h-4" />}
                   </Link>
                 </motion.div>
-              ))}
+              )})}
               <motion.div variants={navItemVariants} className="pt-4 mt-4 border-t border-white/10">
                 <Link
-                  href="#"
+                  href="/contact"
                   onClick={() => setIsOpen(false)}
-                  className="bg-red-600 hover:bg-red-700 text-white text-sm font-bold tracking-wider px-6 py-3 flex items-center justify-center transition-colors rounded-sm"
+                  className="bg-red-600 hover:bg-red-700 text-white text-sm font-normal tracking-wider px-6 py-3 flex items-center justify-center transition-colors rounded-sm"
                 >
                   {mainNav.button}
                   <ArrowRight className="ml-2 w-4 h-4" />

@@ -3,14 +3,13 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronRight, ChevronLeft, ArrowRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import contentData from '@/data/content.json';
-import { ContentData } from '@/types';
+import { HeroVariant } from '@/types';
 
-const typedContentData = contentData as ContentData;
+interface HeroProps {
+  data: HeroVariant;
+}
 
-export default function Hero() {
-  const heroVariantId = typedContentData.Tattoo.templateComponents["template-1"].pages.home.Hero;
-  const heroData = typedContentData.Tattoo.sections.Hero.variants[heroVariantId];
+export default function Hero({ data: heroData }: HeroProps) {
   
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = heroData.slides;
@@ -31,7 +30,7 @@ export default function Hero() {
   }, [slides.length]);
 
   return (
-    <div className="relative w-full h-[500px] md:h-[600px] lg:h-[700px] overflow-hidden bg-black">
+    <div className="relative w-full h-[450px] md:h-[550px] lg:h-[650px] overflow-hidden bg-black">
       <AnimatePresence mode="wait">
         <motion.div
           key={currentSlide}
@@ -66,7 +65,7 @@ export default function Hero() {
               <span className="text-gray-300 uppercase">{slides[currentSlide].subtitlePart2}</span>
             </div>
 
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold font-sans uppercase leading-[1.05] tracking-tight mb-8">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold font-sans uppercase leading-[1.05] tracking-wide mb-8">
               <span className="text-white block">{slides[currentSlide].titleLine1}</span>
               <span className="text-red-600 block">{slides[currentSlide].titleLine2}</span>
             </h1>

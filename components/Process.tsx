@@ -4,14 +4,13 @@ import React from 'react';
 import Image from 'next/image';
 import { Check } from 'lucide-react';
 import { motion, Variants } from 'framer-motion';
-import contentData from '@/data/content.json';
-import { ContentData, ProcessStep } from '@/types';
+import { ProcessStep, ProcessVariant } from '@/types';
 
-const typedContentData = contentData as ContentData;
+interface ProcessProps {
+  data: ProcessVariant;
+}
 
-export default function Process() {
-  const processVariantId = typedContentData.Tattoo.templateComponents["template-1"].pages.home.Process;
-  const processData = typedContentData.Tattoo.sections.Process.variants[processVariantId];
+export default function Process({ data: processData }: ProcessProps) {
 
   const containerVariants: Variants = {
     hidden: { opacity: 0 },
@@ -40,6 +39,7 @@ export default function Process() {
           src={processData.backgroundImage} 
           alt="Process Background" 
           fill 
+          sizes="(max-width: 768px) 100vw, 50vw"
           className="object-cover opacity-20 md:opacity-30 mix-blend-lighten" 
         />
       </div>
@@ -61,7 +61,7 @@ export default function Process() {
               <div className="w-16 h-[2px] bg-red-600" />
             </motion.div>
             
-            <motion.h2 variants={itemVariants} className="text-5xl md:text-6xl font-bold font-sans uppercase leading-[1.05] tracking-tight mb-6">
+            <motion.h2 variants={itemVariants} className="text-5xl md:text-6xl font-bold font-sans uppercase leading-[1.05] tracking-wide mb-6">
               <span className="text-white mr-4">{processData.titleLine1}</span>
               <span className="text-red-600">{processData.titleLine2}</span>
             </motion.h2>
@@ -106,6 +106,7 @@ export default function Process() {
                         src={step.image} 
                         alt={step.title} 
                         fill 
+                        sizes="(max-width: 768px) 100vw, 50vw"
                         className="object-cover opacity-90 group-hover:opacity-100 transition-transform duration-700 group-hover:scale-105" 
                       />
                     </div>

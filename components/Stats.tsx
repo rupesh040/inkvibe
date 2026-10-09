@@ -1,13 +1,10 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { PenTool, Users, Trophy, Star } from 'lucide-react';
-import { motion, Variants } from 'framer-motion';
-import contentData from '@/data/content.json';
-import { ContentData, StatItem } from '@/types';
-
-const typedContentData = contentData as ContentData;
+import { motion, Variants, animate, useInView } from 'framer-motion';
+import { StatItem, StatsVariant } from '@/types';
 
 const IconMap: Record<string, React.ElementType> = {
   'pen-tool': PenTool,
@@ -16,9 +13,40 @@ const IconMap: Record<string, React.ElementType> = {
   'star': Star,
 };
 
-export default function Stats() {
-  const statsVariantId = typedContentData.Tattoo.templateComponents["template-1"].pages.home.Stats;
-  const statsData = typedContentData.Tattoo.sections.Stats.variants[statsVariantId];
+function AnimatedCounter({ value }: { value: string }) {
+  const ref = useRef<HTMLSpanElement>(null);
+  const inView = useInView(ref, { once: true });
+
+  useEffect(() => {
+    if (!inView) return;
+    const numMatch = value.match(/\d+/);
+    if (!numMatch) return;
+    
+    const num = parseInt(numMatch[0], 10);
+    const prefix = value.substring(0, numMatch.index);
+    const suffix = value.substring(numMatch.index! + numMatch[0].length);
+
+    const controls = animate(0, num, {
+      duration: 2.5,
+      ease: [0.22, 1, 0.36, 1] as any,
+      onUpdate: (latest) => {
+        if (ref.current) {
+          ref.current.textContent = `${prefix}${Math.round(latest)}${suffix}`;
+        }
+      }
+    });
+
+    return () => controls.stop();
+  }, [inView, value]);
+
+  return <span ref={ref}>{value}</span>;
+}
+
+interface StatsProps {
+  data: StatsVariant;
+}
+
+export default function Stats({ data: statsData }: StatsProps) {
 
   const containerVariants: Variants = {
     hidden: { opacity: 0 },
@@ -91,7 +119,7 @@ export default function Stats() {
               >
                 <IconComponent className="w-8 h-8 md:w-12 md:h-12 text-red-600 mb-4 md:mb-6" strokeWidth={1.5} />
                 <span className="text-3xl md:text-5xl font-bold font-sans tracking-tight mb-2">
-                  {stat.value}
+                  <AnimatedCounter value={stat.value} />
                 </span>
                 <span className="text-gray-300 text-xs md:text-base tracking-wide">
                   {stat.label}

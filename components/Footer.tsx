@@ -63,6 +63,7 @@ export default function Footer() {
                   src={footerData.logo} 
                   alt="InkVibe Logo" 
                   fill 
+                  sizes="(max-width: 768px) 180px, 180px"
                   className="object-contain object-left" 
                 />
               </div>

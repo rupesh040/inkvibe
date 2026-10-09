@@ -2,23 +2,22 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { ArrowRight, Diamond, Users, ShieldCheck, Star } from 'lucide-react';
+import { ArrowRight, Gem, Users, ShieldCheck, Star } from 'lucide-react';
 import { motion, Variants } from 'framer-motion';
-import contentData from '@/data/content.json';
-import { ContentData, AboutFeature } from '@/types';
-
-const typedContentData = contentData as ContentData;
+import { AboutFeature, AboutVariant } from '@/types';
 
 const IconMap: Record<string, React.ElementType> = {
-  'diamond': Diamond,
+  'diamond': Gem,
   'users': Users,
   'shield-check': ShieldCheck,
   'star': Star,
 };
 
-export default function About() {
-  const aboutVariantId = typedContentData.Tattoo.templateComponents["template-1"].pages.home.About;
-  const aboutData = typedContentData.Tattoo.sections.About.variants[aboutVariantId];
+interface AboutProps {
+  data: AboutVariant;
+}
+
+export default function About({ data: aboutData }: AboutProps) {
 
   const containerVariants: Variants = {
     hidden: { opacity: 0 },
@@ -55,6 +54,7 @@ export default function About() {
                   src={aboutData.image1}
                   alt="Tattoo Artist"
                   fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-cover opacity-90 hover:opacity-100 transition-opacity duration-500"
                 />
               </div>
@@ -64,6 +64,7 @@ export default function About() {
                     src={aboutData.image2}
                     alt="Tattoo Art"
                     fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-cover opacity-90 hover:opacity-100 transition-opacity duration-500"
                   />
                 </div>
@@ -72,6 +73,7 @@ export default function About() {
                     src={aboutData.image3}
                     alt="Tattoo Studio"
                     fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-cover opacity-90 hover:opacity-100 transition-opacity duration-500"
                   />
                 </div>
@@ -93,7 +95,7 @@ export default function About() {
               <div className="w-16 h-[1px] bg-white/20" />
             </motion.div>
 
-            <motion.h2 variants={itemVariants} className="text-4xl md:text-5xl lg:text-6xl font-bold font-sans uppercase leading-[1.05] tracking-tight mb-8">
+            <motion.h2 variants={itemVariants} className="text-4xl md:text-5xl lg:text-6xl font-bold font-sans uppercase leading-[1.05] tracking-wide mb-8">
               <span className="text-white block">{aboutData.titleLine1}</span>
               <span className="text-red-600 block">{aboutData.titleLine2}</span>
             </motion.h2>
@@ -105,20 +107,25 @@ export default function About() {
               {aboutData.description2}
             </motion.p>
 
-            <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-12 gap-y-6 sm:gap-y-0 w-full">
+            <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-12 gap-y-8 sm:gap-y-0 w-full mt-4 flex-wrap lg:flex-nowrap gap-x-4 lg:gap-x-6">
               {aboutData.features.map((feature: AboutFeature, idx: number) => {
-                const IconComponent = IconMap[feature.icon] || Diamond;
+                const IconComponent = IconMap[feature.icon] || Gem;
                 return (
-                  <div key={idx} className={`flex items-center space-x-3 w-full sm:w-auto ${idx !== aboutData.features.length - 1 ? 'sm:pr-4 md:pr-6 sm:border-r border-white/10' : ''}`}>
-                    <div className="w-10 h-10 rounded-full border border-red-600/50 bg-black flex items-center justify-center flex-shrink-0 relative overflow-hidden group">
-                      <div className="absolute inset-0 bg-red-600/10 scale-0 group-hover:scale-100 transition-transform duration-300 rounded-full" />
-                      <IconComponent className="w-4 h-4 text-red-600 relative z-10" />
+                  <React.Fragment key={idx}>
+                    <div className="flex items-center space-x-4 lg:space-x-5 group cursor-default">
+                      <div className="w-12 h-12 md:w-14 md:h-14 rounded-full border border-red-600/60 bg-gradient-to-br from-[#1a0a0a] to-black flex items-center justify-center flex-shrink-0 shadow-[0_0_15px_rgba(220,38,38,0.15)] group-hover:shadow-[0_0_20px_rgba(220,38,38,0.4)] transition-all duration-300 relative overflow-hidden">
+                        <div className="absolute inset-0 bg-red-600/20 scale-0 group-hover:scale-100 transition-transform duration-300 rounded-full" />
+                        <IconComponent className="w-5 h-5 md:w-6 md:h-6 text-red-600 relative z-10" strokeWidth={1.5} />
+                      </div>
+                      <span 
+                        className="text-[9px] md:text-[10px] font-bold font-inter uppercase tracking-widest text-gray-300 leading-snug group-hover:text-white transition-colors"
+                        dangerouslySetInnerHTML={{ __html: feature.title }}
+                      />
                     </div>
-                    <span 
-                      className="text-[10px] md:text-xs font-medium uppercase tracking-widest text-white leading-tight"
-                      dangerouslySetInnerHTML={{ __html: feature.title }}
-                    />
-                  </div>
+                    {idx !== aboutData.features.length - 1 && (
+                      <div className="hidden sm:block w-[1px] h-10 bg-white/10" />
+                    )}
+                  </React.Fragment>
                 );
               })}
             </motion.div>
@@ -142,3 +149,4 @@ export default function About() {
     </section>
   );
 }
+

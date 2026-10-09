@@ -3,14 +3,13 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion, Variants } from 'framer-motion';
-import contentData from '@/data/content.json';
-import { ContentData, CTAButton } from '@/types';
+import { CTAButton, CTAVariant } from '@/types';
 
-const typedContentData = contentData as ContentData;
+interface CTAProps {
+  data: CTAVariant;
+}
 
-export default function CTA() {
-  const ctaVariantId = typedContentData.Tattoo.templateComponents["template-1"].pages.home.CTA;
-  const ctaData = typedContentData.Tattoo.sections.CTA.variants[ctaVariantId];
+export default function CTA({ data: ctaData }: CTAProps) {
 
   const containerVariants: Variants = {
     hidden: { opacity: 0 },
@@ -68,7 +67,7 @@ export default function CTA() {
             </h3>
           </motion.div>
           
-          <motion.h2 variants={itemVariants} className="text-5xl md:text-7xl font-bold font-sans uppercase leading-[1.05] tracking-tighter mb-8">
+          <motion.h2 variants={itemVariants} className="text-5xl md:text-7xl font-bold font-sans uppercase leading-[1.05] tracking-wide mb-8">
             <div className="text-white mb-2">{ctaData.titleLine1}</div>
             <div className="text-red-600">{ctaData.titleLine2}</div>
           </motion.h2>
@@ -83,11 +82,15 @@ export default function CTA() {
               if (btn.style === 'solid') {
                 return (
                   <a 
+                    key={idx}
                     href={btn.link} 
-                    key={idx} 
-                    className="bg-[#dc2626] hover:bg-[#b91c1c] text-white px-8 py-5 uppercase font-bold text-sm tracking-widest flex items-center justify-center transition-colors"
+                    className="relative group bg-red-600 text-white px-8 py-5 uppercase font-bold text-sm tracking-widest flex items-center justify-center overflow-hidden w-full sm:w-auto"
+                    style={{ clipPath: 'polygon(12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%, 0 12px)' }}
                   >
-                    {btn.text} <span className="ml-3 font-normal text-lg">→</span>
+                    <span className="relative z-10 flex items-center">
+                      {btn.text} <span className="ml-3 font-normal text-lg group-hover:translate-x-1 transition-transform duration-300">→</span>
+                    </span>
+                    <div className="absolute inset-0 bg-red-700 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300 ease-out" />
                   </a>
                 );
               }

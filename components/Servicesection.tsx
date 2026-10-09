@@ -4,14 +4,13 @@ import React from 'react';
 import Image from 'next/image';
 import { ArrowRight } from 'lucide-react';
 import { motion, Variants } from 'framer-motion';
-import contentData from '@/data/content.json';
-import { ContentData, ServiceItem } from '@/types';
+import { ServiceItem, ServicesVariant } from '@/types';
 
-const typedContentData = contentData as ContentData;
+interface ServicesProps {
+  data: ServicesVariant;
+}
 
-export default function Services() {
-  const serviceVariantId = typedContentData.Tattoo.templateComponents["template-1"].pages.home.Services;
-  const servicesData = typedContentData.Tattoo.sections.Services.variants[serviceVariantId];
+export default function Services({ data: servicesData }: ServicesProps) {
 
   const containerVariants: Variants = {
     hidden: { opacity: 0 },
@@ -46,7 +45,7 @@ export default function Services() {
               </h3>
               <div className="w-16 h-[1px] bg-white/20" />
             </motion.div>
-            <motion.h2 variants={itemVariants} className="text-5xl md:text-6xl font-bold font-sans uppercase leading-[1.05] tracking-tight">
+            <motion.h2 variants={itemVariants} className="text-5xl md:text-6xl font-bold font-sans uppercase leading-[1.05] tracking-wide">
               <span className="text-white mr-4">{servicesData.titleLine1}</span>
               <span className="text-red-600">{servicesData.titleLine2}</span>
             </motion.h2>

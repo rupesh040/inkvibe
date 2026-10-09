@@ -3,10 +3,7 @@
 import React from 'react';
 import { motion, Variants } from 'framer-motion';
 import { ArrowLeft, ArrowRight, Star } from 'lucide-react';
-import contentData from '@/data/content.json';
-import { ContentData, Testimonial } from '@/types';
-
-const typedContentData = contentData as ContentData;
+import { Testimonial, TestimonialVariant } from '@/types';
 
 const QuoteIcon = () => (
   <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -15,9 +12,11 @@ const QuoteIcon = () => (
   </svg>
 );
 
-export default function Testimonials() {
-  const testimonialVariantId = typedContentData.Tattoo.templateComponents["template-1"].pages.home.Testimonials;
-  const testimonialData = typedContentData.Tattoo.sections.Testimonials.variants[testimonialVariantId];
+interface TestimonialsProps {
+  data: TestimonialVariant;
+}
+
+export default function Testimonials({ data: testimonialData }: TestimonialsProps) {
 
   const containerVariants: Variants = {
     hidden: { opacity: 0 },
@@ -44,7 +43,7 @@ export default function Testimonials() {
               </h3>
               <div className="w-16 h-[2px] bg-red-600" />
             </motion.div>
-            <motion.h2 variants={itemVariants} initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-5xl md:text-6xl font-bold font-sans uppercase leading-[1.05] tracking-tight">
+            <motion.h2 variants={itemVariants} initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-5xl md:text-6xl font-bold font-sans uppercase leading-[1.05] tracking-wide">
               <span className="text-white mr-4">{testimonialData.titleLine1}</span>
               <span className="text-red-600">{testimonialData.titleLine2}</span>
             </motion.h2>
