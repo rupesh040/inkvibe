@@ -104,7 +104,7 @@ export default function Team({ data: teamData }: TeamProps) {
             <motion.div
               key={idx}
               variants={itemVariants}
-              className="relative flex flex-col group p-[1px] overflow-hidden"
+              className={`relative flex flex-col group p-[1px] overflow-hidden${!isTeamPage && idx >= 4 ? ' hidden sm:flex' : ''}`}
             >
               <span className="absolute inset-[-1000%] animate-[spin_4s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,transparent_0%,#dc2626_50%,transparent_100%)] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               <div className="relative flex flex-col bg-[#080808] border border-red-600/30 group-hover:border-transparent transition-colors duration-500 h-full z-10">
@@ -113,6 +113,7 @@ export default function Team({ data: teamData }: TeamProps) {
                     src={member.image} 
                     alt={member.name} 
                     fill 
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                     className="object-cover opacity-90 group-hover:opacity-100 transition-transform duration-700 group-hover:scale-110" 
                   />
                 </div>

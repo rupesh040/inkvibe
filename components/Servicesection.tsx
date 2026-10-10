@@ -89,6 +89,7 @@ export default function Services({ data: servicesData }: ServicesProps) {
                       src={service.image}
                       alt={service.title}
                       fill
+                      sizes="(max-width: 1024px) 100vw, 50vw"
                       className="object-cover opacity-90 group-hover:opacity-100 transition-transform duration-700 group-hover:scale-105"
                     />
                   </div>

@@ -50,7 +50,7 @@ export default function Hero({ data: heroData }: HeroProps) {
         </motion.div>
       </AnimatePresence>
 
-      <div className="relative z-10 w-full h-full max-w-7xl mx-auto px-6 md:px-12 lg:px-16 flex flex-col justify-center">
+      <div className="relative z-10 w-full h-full max-w-7xl mx-auto px-6 md:px-12 lg:px-16 flex flex-col justify-center pb-24 md:pb-0">
         <AnimatePresence mode="wait">
           <motion.div
             key={`content-${currentSlide}`}
@@ -58,20 +58,20 @@ export default function Hero({ data: heroData }: HeroProps) {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -30 }}
             transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
-            className="max-w-2xl mt-12"
+            className="max-w-2xl mt-6 md:mt-12"
           >
-            <div className="flex items-center space-x-2 text-xs md:text-sm tracking-[0.2em] font-medium mb-6">
+            <div className="flex items-center space-x-2 text-xs md:text-sm tracking-[0.2em] font-medium mb-3 md:mb-6">
               <span className="text-red-600 uppercase">{slides[currentSlide].subtitlePart1}</span>
               <span className="text-gray-300 uppercase">{slides[currentSlide].subtitlePart2}</span>
             </div>
 
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold font-sans uppercase leading-[1.05] tracking-wide mb-8">
+            <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-sans uppercase leading-[1.05] tracking-wide mb-4 md:mb-8">
               <span className="text-white block">{slides[currentSlide].titleLine1}</span>
               <span className="text-red-600 block">{slides[currentSlide].titleLine2}</span>
             </h1>
 
             <div 
-              className="text-gray-300 text-lg md:text-xl font-light leading-relaxed mb-10 max-w-lg"
+              className="text-gray-300 text-sm md:text-xl font-light leading-relaxed mb-5 md:mb-10 max-w-lg"
               dangerouslySetInnerHTML={{ __html: slides[currentSlide].description }}
             />
 

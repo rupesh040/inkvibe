@@ -75,6 +75,7 @@ export default function Stats({ data: statsData }: StatsProps) {
           src={statsData.imageLeft} 
           alt="Tattoo Machine" 
           fill 
+          sizes="(max-width: 768px) 75vw, 33vw"
           className="object-cover opacity-20 md:opacity-60 mix-blend-lighten" 
         />
       </div>
@@ -90,6 +91,7 @@ export default function Stats({ data: statsData }: StatsProps) {
           src={statsData.imageRight} 
           alt="Tattoo Artist" 
           fill 
+          sizes="(max-width: 768px) 75vw, 33vw"
           className="object-cover opacity-20 md:opacity-60 mix-blend-lighten" 
         />
       </div>

@@ -38,6 +38,7 @@ export default function CTA({ data: ctaData }: CTAProps) {
           src={ctaData.image} 
           alt="CTA Background" 
           fill 
+          sizes="100vw"
           className="object-cover opacity-30 lg:opacity-70 mix-blend-lighten" 
         />
       </div>
