@@ -42,17 +42,27 @@ export default function Navbar() {
             </div>
           )}
           {topBar.phone && (
-            <div className="flex items-center space-x-2 hover:text-red-500 transition-colors cursor-default">
-              <Phone className="w-3.5 h-3.5 text-red-600" />
-              <span className="text-gray-300">{topBar.phone}</span>
+            <div className="flex items-center">
+              <a
+                href={`tel:${topBar.phone.replace(/\s+/g, '')}`}
+                className="flex items-center space-x-2 text-gray-300 hover:text-red-500 transition-colors"
+                aria-label={`Call ${topBar.phone}`}
+              >
+                <Phone className="w-3.5 h-3.5 text-red-600" />
+                <span>{topBar.phone}</span>
+              </a>
               {topBar.email && <div className="w-px h-4 bg-white/20 ml-6" />}
             </div>
           )}
           {topBar.email && (
-            <div className="flex items-center space-x-2 hover:text-red-500 transition-colors cursor-default">
+            <a
+              href={`mailto:${topBar.email}`}
+              className="flex items-center space-x-2 text-gray-300 hover:text-red-500 transition-colors"
+              aria-label={`Email ${topBar.email}`}
+            >
               <Mail className="w-3.5 h-3.5 text-red-600" />
-              <span className="text-gray-300">{topBar.email}</span>
-            </div>
+              <span>{topBar.email}</span>
+            </a>
           )}
         </div>
 

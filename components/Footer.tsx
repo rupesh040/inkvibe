@@ -137,17 +137,29 @@ export default function Footer() {
                 </div>
                 <span className="text-sm text-gray-400 leading-relaxed">{footerData.contact.info.address}</span>
               </li>
-              <li className="flex items-center">
-                <div className="w-8 h-8 rounded-full border border-red-600/50 flex-shrink-0 flex items-center justify-center mr-4">
-                  <Phone className="w-3.5 h-3.5 text-red-500" />
-                </div>
-                <span className="text-sm text-gray-400">{footerData.contact.info.phone}</span>
+              <li>
+                <a
+                  href={`tel:${footerData.contact.info.phone.replace(/\s+/g, '')}`}
+                  className="flex items-center group transition-colors"
+                  aria-label={`Call ${footerData.contact.info.phone}`}
+                >
+                  <div className="w-8 h-8 rounded-full border border-red-600/50 flex-shrink-0 flex items-center justify-center mr-4 group-hover:bg-red-600/20 group-hover:border-red-500 transition-all">
+                    <Phone className="w-3.5 h-3.5 text-red-500" />
+                  </div>
+                  <span className="text-sm text-gray-400 group-hover:text-red-500 transition-colors">{footerData.contact.info.phone}</span>
+                </a>
               </li>
-              <li className="flex items-center">
-                <div className="w-8 h-8 rounded-full border border-red-600/50 flex-shrink-0 flex items-center justify-center mr-4">
-                  <Mail className="w-3.5 h-3.5 text-red-500" />
-                </div>
-                <span className="text-sm text-gray-400">{footerData.contact.info.email}</span>
+              <li>
+                <a
+                  href={`mailto:${footerData.contact.info.email}`}
+                  className="flex items-center group transition-colors"
+                  aria-label={`Email ${footerData.contact.info.email}`}
+                >
+                  <div className="w-8 h-8 rounded-full border border-red-600/50 flex-shrink-0 flex items-center justify-center mr-4 group-hover:bg-red-600/20 group-hover:border-red-500 transition-all">
+                    <Mail className="w-3.5 h-3.5 text-red-500" />
+                  </div>
+                  <span className="text-sm text-gray-400 group-hover:text-red-500 transition-colors">{footerData.contact.info.email}</span>
+                </a>
               </li>
             </ul>
           </motion.div>
@@ -157,7 +169,7 @@ export default function Footer() {
       <div className="relative bg-[#030303]">
         <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-red-600/40 to-transparent shadow-[0_0_10px_rgba(220,38,38,0.3)]" />
         
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-6 flex flex-col md:flex-row items-center justify-between relative z-10">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-6 flex flex-row md:flex-row items-center justify-between relative z-10">
           <p className="text-xs text-gray-500 mb-4 md:mb-0">
             {footerData.bottomBar.copyright}
           </p>

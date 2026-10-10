@@ -77,15 +77,35 @@ export default function ContactSection({ data }: ContactSectionProps) {
               <div className="space-y-6">
                 {data.contactItems.map((item, idx) => {
                   const Icon = contactIcons[idx] || MapPin;
-                  return (
-                    <motion.div key={idx} custom={idx + 3}  className="flex items-start gap-4 group">
+                  const isPhone = item.label.toLowerCase().includes('call') || item.label.toLowerCase().includes('phone');
+                  const isEmail = item.label.toLowerCase().includes('email') || item.label.toLowerCase().includes('mail');
+                  const href = isPhone 
+                    ? `tel:${item.value.replace(/\s+/g, '')}` 
+                    : isEmail 
+                    ? `mailto:${item.value}` 
+                    : undefined;
+
+                  const ItemInner = (
+                    <div className="flex items-start gap-4 w-full">
                       <div className="w-11 h-11 rounded-full border border-red-600/60 flex items-center justify-center shrink-0 group-hover:bg-red-600 group-hover:border-red-600 transition-all duration-300">
                         <Icon className="w-4 h-4 text-red-500 group-hover:text-white transition-colors" />
                       </div>
                       <div className="flex flex-col">
                         <span className="text-[10px] font-bold tracking-[0.2em] uppercase text-red-600 mb-0.5">{item.label}</span>
-                        <span className="text-sm text-gray-300 leading-snug">{item.value}</span>
+                        <span className="text-sm text-gray-300 group-hover:text-white transition-colors leading-snug">{item.value}</span>
                       </div>
+                    </div>
+                  );
+
+                  return (
+                    <motion.div key={idx} custom={idx + 3} className="flex items-start gap-4 group">
+                      {href ? (
+                        <a href={href} className="w-full focus:outline-none" aria-label={`${item.label}: ${item.value}`}>
+                          {ItemInner}
+                        </a>
+                      ) : (
+                        ItemInner
+                      )}
                     </motion.div>
                   );
                 })}
