@@ -31,7 +31,7 @@ export default function TeamDetailProfile({ member }: TeamDetailProfileProps) {
   };
 
   return (
-    <section className="w-full bg-[#050505] text-white py-20 relative">
+    <section className="w-full bg-[#050505] text-white py-6 relative">
       <div className="max-w-6xl mx-auto px-4 lg:px-6">
         <motion.div 
           variants={containerVariants}
@@ -60,7 +60,7 @@ export default function TeamDetailProfile({ member }: TeamDetailProfileProps) {
               {member.role}
             </h3>
             
-            <h2 className="text-5xl md:text-6xl font-bold font-sans uppercase leading-none tracking-tight mb-6">
+            <h2 className="text-[clamp(2.35rem,5vw,5.2rem)] md:text-6xl font-bold font-sans uppercase leading-none tracking-tight mb-6">
               <span className="text-white mr-4">{member.name.split(' ')[0]}</span>
               <span className="text-red-600">{member.name.split(' ').slice(1).join(' ')}</span>
             </h2>

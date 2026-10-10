@@ -1,16 +1,16 @@
-'use client';
+"use client";
 
-import React, { useEffect, useRef } from 'react';
-import Image from 'next/image';
-import { PenTool, Users, Trophy, Star } from 'lucide-react';
-import { motion, Variants, animate, useInView } from 'framer-motion';
-import { StatItem, StatsVariant } from '@/types';
+import React, { useEffect, useRef } from "react";
+import Image from "next/image";
+import { PenTool, Users, Trophy, Star } from "lucide-react";
+import { motion, animate, useInView, type Variants } from "framer-motion";
+import type { StatItem, StatsVariant } from "@/types";
 
-const IconMap: Record<string, React.ElementType> = {
-  'pen-tool': PenTool,
-  'users': Users,
-  'trophy': Trophy,
-  'star': Star,
+const iconMap: Record<string, React.ElementType> = {
+  "pen-tool": PenTool,
+  users: Users,
+  trophy: Trophy,
+  star: Star,
 };
 
 function AnimatedCounter({ value }: { value: string }) {
@@ -19,21 +19,22 @@ function AnimatedCounter({ value }: { value: string }) {
 
   useEffect(() => {
     if (!inView) return;
-    const numMatch = value.match(/\d+/);
-    if (!numMatch) return;
-    
-    const num = parseInt(numMatch[0], 10);
-    const prefix = value.substring(0, numMatch.index);
-    const suffix = value.substring(numMatch.index! + numMatch[0].length);
 
-    const controls = animate(0, num, {
-      duration: 2.5,
-      ease: [0.22, 1, 0.36, 1] as any,
+    const match = value.match(/\d+/);
+    if (!match || match.index === undefined) return;
+
+    const number = parseInt(match[0], 10);
+    const prefix = value.slice(0, match.index);
+    const suffix = value.slice(match.index + match[0].length);
+
+    const controls = animate(0, number, {
+      duration: 2,
+      ease: [0.22, 1, 0.36, 1],
       onUpdate: (latest) => {
         if (ref.current) {
           ref.current.textContent = `${prefix}${Math.round(latest)}${suffix}`;
         }
-      }
+      },
     });
 
     return () => controls.stop();
@@ -46,87 +47,100 @@ interface StatsProps {
   data: StatsVariant;
 }
 
-export default function Stats({ data: statsData }: StatsProps) {
+const containerVariants: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: { staggerChildren: 0.12, delayChildren: 0.1 },
+  },
+};
 
-  const containerVariants: Variants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: { staggerChildren: 0.15, delayChildren: 0.1 },
-    },
-  };
+const itemVariants: Variants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { type: "spring", stiffness: 200, damping: 20 },
+  },
+};
 
-  const itemVariants: Variants = {
-    hidden: { opacity: 0, y: 30 },
-    visible: { opacity: 1, y: 0, transition: { type: 'spring', stiffness: 200, damping: 20 } },
-  };
-
+export default function Stats({ data }: StatsProps) {
   return (
-    <section className="w-full bg-black text-white py-24 md:py-32 relative overflow-hidden">
-      
-      <div 
-        className="absolute top-0 left-0 w-3/4 md:w-1/3 h-full z-0 pointer-events-none" 
-        style={{ 
-          maskImage: 'linear-gradient(to right, black 20%, transparent 100%)', 
-          WebkitMaskImage: 'linear-gradient(to right, black 20%, transparent 100%)' 
+    <section className="relative w-full overflow-hidden bg-black py-12 text-white sm:py-14 md:py-16">
+      <div
+        className="pointer-events-none absolute inset-y-0 left-0 z-0 w-3/4 md:w-1/3"
+        style={{
+          maskImage: "linear-gradient(to right, black 20%, transparent 100%)",
+          WebkitMaskImage:
+            "linear-gradient(to right, black 20%, transparent 100%)",
         }}
       >
-        <Image 
-          src={statsData.imageLeft} 
-          alt="Tattoo Machine" 
-          fill 
+        <Image
+          src={data.imageLeft}
+          alt="Tattoo machine"
+          fill
           sizes="(max-width: 768px) 75vw, 33vw"
-          className="object-cover opacity-20 md:opacity-60 mix-blend-lighten" 
+          className="object-cover opacity-20 mix-blend-lighten md:opacity-60"
         />
       </div>
 
-      <div 
-        className="absolute top-0 right-0 w-3/4 md:w-1/3 h-full z-0 pointer-events-none" 
-        style={{ 
-          maskImage: 'linear-gradient(to left, black 20%, transparent 100%)', 
-          WebkitMaskImage: 'linear-gradient(to left, black 20%, transparent 100%)' 
+      <div
+        className="pointer-events-none absolute inset-y-0 right-0 z-0 w-3/4 md:w-1/3"
+        style={{
+          maskImage: "linear-gradient(to left, black 20%, transparent 100%)",
+          WebkitMaskImage:
+            "linear-gradient(to left, black 20%, transparent 100%)",
         }}
       >
-        <Image 
-          src={statsData.imageRight} 
-          alt="Tattoo Artist" 
-          fill 
+        <Image
+          src={data.imageRight}
+          alt="Tattoo artist"
+          fill
           sizes="(max-width: 768px) 75vw, 33vw"
-          className="object-cover opacity-20 md:opacity-60 mix-blend-lighten" 
+          className="object-cover opacity-20 mix-blend-lighten md:opacity-60"
         />
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-10 relative z-10">
-        <motion.div 
+      <div className="relative z-10 mx-auto max-w-7xl px-4 md:px-8 lg:px-10">
+        <motion.div
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-2 md:grid-cols-4 items-center justify-center relative z-10"
+          viewport={{ once: true, margin: "-50px" }}
+          className="relative z-10 grid grid-cols-2 items-center justify-center md:grid-cols-4"
         >
-          {statsData.stats.map((stat: StatItem, idx: number) => {
-            const IconComponent = IconMap[stat.icon] || Star;
-            
-            let borderClasses = "border-red-600/30 ";
-            if (idx === 0) borderClasses += "border-r border-b md:border-b-0";
-            else if (idx === 1) borderClasses += "border-b md:border-b-0 md:border-r";
-            else if (idx === 2) borderClasses += "border-r";
-            else borderClasses += "";
-            
+          {data.stats.map((stat: StatItem, index: number) => {
+            const Icon = iconMap[stat.icon] || Star;
+
+            const borderClasses =
+              index === 0
+                ? "border-r border-b md:border-b-0"
+                : index === 1
+                  ? "border-b md:border-b-0 md:border-r"
+                  : index === 2
+                    ? "border-r"
+                    : "";
+
             return (
-              <motion.div 
+              <motion.div
+                key={stat.label}
                 variants={itemVariants}
-                key={idx} 
-                className={`flex flex-col items-center text-center py-10 md:py-0 ${borderClasses}`}
+                className={`flex flex-col items-center border-red-600/30 px-2 py-6 text-center sm:py-7 md:py-0 ${borderClasses}`}
               >
-                <IconComponent className="w-8 h-8 md:w-12 md:h-12 text-red-600 mb-4 md:mb-6" strokeWidth={1.5} />
-                <span className="text-3xl md:text-5xl font-bold font-sans tracking-tight mb-2">
+                <Icon
+                  className="mb-2.5 h-7 w-7 text-red-600 md:mb-3 md:h-10 md:w-10"
+                  strokeWidth={1.5}
+                />
+
+                <span className="mb-1 text-2xl font-bold tracking-tight md:text-4xl lg:text-5xl">
                   <AnimatedCounter value={stat.value} />
                 </span>
-                <span className="text-gray-300 text-xs md:text-base tracking-wide">
+
+                <span className="text-xs tracking-wide text-gray-300 sm:text-sm md:text-base">
                   {stat.label}
                 </span>
-                <div className="w-6 md:w-8 h-[2px] bg-red-600 mt-4 md:mt-6" />
+
+                <div className="mt-3 h-0.5 w-6 bg-red-600 md:mt-4 md:w-8" />
               </motion.div>
             );
           })}

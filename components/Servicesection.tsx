@@ -26,7 +26,7 @@ export default function Services({ data: servicesData }: ServicesProps) {
   };
 
   return (
-    <section className="w-full bg-[#030303] text-white py-24 relative overflow-hidden">
+    <section className="w-full bg-[#030303] text-white py-6 relative overflow-hidden">
       <div className="absolute top-0 right-0 w-1/2 h-[800px] bg-[url('/bg-texture.webp')] opacity-10 bg-cover bg-center mix-blend-overlay pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-10">
@@ -45,7 +45,7 @@ export default function Services({ data: servicesData }: ServicesProps) {
               </h3>
               <div className="w-16 h-[1px] bg-white/20" />
             </motion.div>
-            <motion.h2 variants={itemVariants} className="text-5xl md:text-6xl font-bold font-sans uppercase leading-[1.05] tracking-wide">
+            <motion.h2 variants={itemVariants} className="text-[clamp(2.35rem,5vw,5.2rem)] md:text-6xl font-bold font-sans uppercase leading-[1.05] tracking-wide">
               <span className="text-white mr-4">{servicesData.titleLine1}</span>
               <span className="text-red-600">{servicesData.titleLine2}</span>
             </motion.h2>

@@ -64,7 +64,7 @@ export default function Gallery({ data }: { data: any }) {
   };
 
   return (
-    <section className="w-full bg-[#050505] py-16 md:py-24">
+    <section className="w-full bg-[#050505] py-6 md:py-12">
       <div className="max-w-[1400px] mx-auto px-4 md:px-8">
         <motion.div
           key={currentPage}

@@ -90,7 +90,7 @@ export default function ServiceDetailAbout({
             {data.subtitle}
           </motion.p>
 
-          <h2 className="text-3xl font-extrabold uppercase leading-[1.12] tracking-tight text-white sm:text-4xl lg:text-[clamp(2rem,3.2vw,2.8rem)]">
+          <h2 className="text-[clamp(2.35rem,5vw,5.2rem)] md:text-6xl font-extrabold uppercase leading-[1.12] tracking-tight text-white">
             <span>{data.titleLine1} </span>
             <span className="text-red-600">{data.titleLine2}</span>
           </h2>

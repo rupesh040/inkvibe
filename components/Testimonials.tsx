@@ -67,7 +67,7 @@ export default function Testimonials({ data: testimonialData }: TestimonialsProp
   );
 
   return (
-    <section className="w-full bg-[#050505] text-white py-24 relative overflow-hidden">
+    <section className="w-full bg-[#050505] text-white py-6 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-10 relative z-10">
 
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end mb-16 gap-8">
@@ -78,7 +78,7 @@ export default function Testimonials({ data: testimonialData }: TestimonialsProp
               </h3>
               <div className="w-16 h-[2px] bg-red-600" />
             </motion.div>
-            <motion.h2 variants={itemVariants} initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-5xl md:text-6xl font-bold font-sans uppercase leading-[1.05] tracking-wide">
+            <motion.h2 variants={itemVariants} initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-[clamp(2.35rem,5vw,5.2rem)] md:text-6xl font-bold font-sans uppercase leading-[1.05] tracking-wide">
               <span className="text-white mr-4">{testimonialData.titleLine1}</span>
               <span className="text-red-600">{testimonialData.titleLine2}</span>
             </motion.h2>

@@ -19,7 +19,7 @@ export default function BlogDetailContent({ data, currentId }: { data: any; curr
   };
 
   return (
-    <section className="w-full bg-[#050505] text-white py-16 md:py-24">
+    <section className="w-full bg-[#050505] text-white py-8">
       <div className="max-w-[1400px] mx-auto px-4 md:px-8">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
           

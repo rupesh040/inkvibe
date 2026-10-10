@@ -53,7 +53,7 @@ export default function PageBanner({ pageName, data, customTitle, customBreadcru
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
-            className="text-4xl md:text-5xl lg:text-6xl font-bold font-bebas text-white uppercase tracking-widest mb-6 leading-[1.05]"
+            className="text-[clamp(2.35rem,5vw,5.2rem)] md:text-6xl font-bold font-bebas text-white uppercase tracking-widest mb-6 leading-[1.05]"
           >
             {title}
           </motion.h1>

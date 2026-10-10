@@ -9,7 +9,7 @@ export default function ServiceDetailWhyChoose({ data }: { data: any }) {
           <h3 className="text-red-600 font-bold tracking-[0.2em] text-sm uppercase">
             {data.subtitle}
           </h3>
-          <h2 className="text-4xl md:text-5xl lg:text-[44px] font-bold font-sans uppercase leading-[1.1] tracking-tight">
+          <h2 className="text-[clamp(2.35rem,5vw,5.2rem)] md:text-6xl font-bold font-sans uppercase leading-[1.1] tracking-tight">
             <span className="text-white mr-3 block md:inline">{data.titleLine1}</span>
             <span className="text-red-600 block md:inline">{data.titleLine2}</span>
           </h2>

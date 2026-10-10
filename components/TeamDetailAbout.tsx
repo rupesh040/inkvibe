@@ -69,7 +69,7 @@ export default function TeamDetailAbout({
           )}
 
           {(member.aboutTitleLine1 || member.aboutTitleLine2) && (
-            <h2 className="mb-5 text-3xl font-extrabold uppercase leading-[1.08] tracking-tight sm:text-4xl lg:text-5xl">
+            <h2 className="mb-5 text-[clamp(2.35rem,5vw,5.2rem)] md:text-6xl font-extrabold uppercase leading-[1.08] tracking-tight">
               {member.aboutTitleLine1 && (
                 <span className="text-white">
                   {member.aboutTitleLine1}{" "}

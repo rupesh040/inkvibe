@@ -65,7 +65,7 @@ export default function Hero({ data: heroData }: HeroProps) {
               <span className="text-gray-300 uppercase">{slides[currentSlide].subtitlePart2}</span>
             </div>
 
-            <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-sans uppercase leading-[1.05] tracking-wide mb-4 md:mb-8">
+            <h1 className="text-[clamp(2.35rem,5vw,5.2rem)] md:text-6xl lg:text-7xl font-bold font-sans uppercase leading-[1.05] tracking-wide mb-4 md:mb-8">
               <span className="text-white block">{slides[currentSlide].titleLine1}</span>
               <span className="text-red-600 block">{slides[currentSlide].titleLine2}</span>
             </h1>

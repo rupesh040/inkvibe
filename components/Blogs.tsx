@@ -35,7 +35,7 @@ export default function Blogs({ data: blogsData, isBlogPage = false }: BlogsProp
   };
 
   return (
-    <section className="bg-black py-20 px-4 md:px-8 lg:px-16">
+    <section className="bg-black py-6 px-6 md:px-12 lg:px-18">
       <div className="max-w-7xl mx-auto">
         <motion.div 
           variants={containerVariants}
@@ -50,7 +50,7 @@ export default function Blogs({ data: blogsData, isBlogPage = false }: BlogsProp
             </span>
             <div className="h-[1px] w-12 md:w-16 bg-red-600"></div>
           </motion.div>
-          <motion.h2 variants={itemVariants} className="text-4xl md:text-5xl lg:text-6xl font-bold font-sans text-white uppercase tracking-wider">
+          <motion.h2 variants={itemVariants} className="text-[clamp(2.35rem,5vw,5.2rem)] md:text-6xl font-bold font-sans text-white uppercase tracking-wider">
             {blogsData.titleLine1} <span className="text-red-600">{blogsData.titleLine2}</span>
           </motion.h2>
         </motion.div>

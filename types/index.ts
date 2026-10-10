@@ -108,6 +108,7 @@ export interface ProcessVariant {
 export interface TeamSocialLink {
   platform: string;
   url: string;
+  svg?: string;
 }
 
 export interface TeamFeature {
@@ -140,6 +141,7 @@ export interface TeamVariant {
   titleLine1: string;
   titleLine2: string;
   description: string;
+  itemsPerPage?: number;
   members: TeamMember[];
   buttonText?: string;
   buttonLink?: string;

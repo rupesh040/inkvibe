@@ -7,6 +7,19 @@ import { usePathname } from 'next/navigation';
 import { motion, Variants } from 'framer-motion';
 import { ArrowRight, ChevronLeft, ChevronRight } from 'lucide-react';
 import { TeamMember, TeamSocialLink, TeamVariant } from '@/types';
+import contentData from '@/data/content.json';
+
+const DynamicIcon = ({ svgStr, className }: { svgStr?: string; className?: string }) => {
+  if (svgStr) {
+    return (
+      <div 
+        dangerouslySetInnerHTML={{ __html: svgStr }} 
+        className={`[&>svg]:w-full [&>svg]:h-full ${className}`} 
+      />
+    );
+  }
+  return null;
+};
 
 const InstagramIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
@@ -34,19 +47,23 @@ const IconMap: Record<string, React.ElementType> = {
   'whatsapp': WhatsappIcon,
 };
 
+const defaultTeamData = (contentData as any).Tattoo.sections.Team.variants.TattooTeam1 as TeamVariant;
+
 interface TeamProps {
-  data: TeamVariant;
+  data?: TeamVariant;
 }
 
-export default function Team({ data: teamData }: TeamProps) {
+export default function Team({ data }: TeamProps) {
+  const teamData = data || defaultTeamData;
   const pathname = usePathname();
   const isTeamPage = pathname === '/team';
   
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 8;
-  const totalPages = Math.ceil(teamData.members.length / itemsPerPage);
+  const itemsPerPage = teamData.itemsPerPage || 8;
+  const members = teamData.members || [];
+  const totalPages = Math.ceil(members.length / itemsPerPage) || 1;
   
-  const currentMembers = teamData.members.slice(
+  const currentMembers = members.slice(
     (currentPage - 1) * itemsPerPage,
     currentPage * itemsPerPage
   );
@@ -68,7 +85,7 @@ export default function Team({ data: teamData }: TeamProps) {
   };
 
   return (
-    <section className="w-full bg-[#050505] text-white py-24 relative overflow-hidden">
+    <section className="w-full bg-[#050505] text-white py-6 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 lg:px-6 relative z-10">
         
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-16 gap-8">
@@ -79,7 +96,7 @@ export default function Team({ data: teamData }: TeamProps) {
               </h3>
               <div className="w-16 h-[2px] bg-red-600" />
             </motion.div>
-            <motion.h2 variants={itemVariants} initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-5xl md:text-6xl font-bold font-sans uppercase leading-[1.05] tracking-wide">
+            <motion.h2 variants={itemVariants} initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-[clamp(2.35rem,5vw,5.2rem)] md:text-6xl font-bold font-sans uppercase leading-[1.05] tracking-wide">
               <span className="text-white mr-4">{teamData.titleLine1}</span>
               <span className="text-red-600">{teamData.titleLine2}</span>
             </motion.h2>
@@ -102,7 +119,7 @@ export default function Team({ data: teamData }: TeamProps) {
         >
           {currentMembers.map((member: TeamMember, idx: number) => (
             <motion.div
-              key={idx}
+              key={member.id || idx}
               variants={itemVariants}
               className={`relative flex flex-col group p-[1px] overflow-hidden${!isTeamPage && idx >= 4 ? ' hidden sm:flex' : ''}`}
             >
@@ -129,7 +146,7 @@ export default function Team({ data: teamData }: TeamProps) {
                   <div className="w-8 h-[2px] bg-red-600 my-5" />
                   
                   <div className="flex items-center space-x-3 mt-auto relative z-30">
-                    {member.socials.map((social: TeamSocialLink, sIdx: number) => {
+                    {member.socials?.map((social: TeamSocialLink, sIdx: number) => {
                       const Icon = IconMap[social.platform?.toLowerCase()] || InstagramIcon;
                       const isFirst = sIdx === 0;
                       return (
@@ -141,8 +158,13 @@ export default function Team({ data: teamData }: TeamProps) {
                               ? 'border-red-600/50 text-white hover:bg-red-600 hover:border-red-600' 
                               : 'border-gray-700 text-gray-400 hover:border-red-600 hover:text-white'
                           }`}
+                          aria-label={social.platform || 'Social link'}
                         >
-                          <Icon className="w-4 h-4" strokeWidth={1.5} />
+                          {social.svg ? (
+                            <DynamicIcon svgStr={social.svg} className="w-4 h-4" />
+                          ) : (
+                            <Icon className="w-4 h-4" strokeWidth={1.5} />
+                          )}
                         </Link>
                       );
                     })}
@@ -167,6 +189,7 @@ export default function Team({ data: teamData }: TeamProps) {
             <button 
               onClick={handlePrev} 
               disabled={currentPage === 1}
+              aria-label="Previous page"
               className={`w-10 h-10 rounded-full border flex items-center justify-center transition-colors ${
                 currentPage === 1 ? 'border-gray-800 text-gray-600 cursor-not-allowed' : 'border-red-600/50 text-white hover:bg-red-600 hover:border-red-600'
               }`}
@@ -179,6 +202,7 @@ export default function Team({ data: teamData }: TeamProps) {
             <button 
               onClick={handleNext} 
               disabled={currentPage === totalPages}
+              aria-label="Next page"
               className={`w-10 h-10 rounded-full border flex items-center justify-center transition-colors ${
                 currentPage === totalPages ? 'border-gray-800 text-gray-600 cursor-not-allowed' : 'border-red-600/50 text-white hover:bg-red-600 hover:border-red-600'
               }`}

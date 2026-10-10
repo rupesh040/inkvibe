@@ -47,7 +47,7 @@ export default function ContactSection({ data }: ContactSectionProps) {
 
   return (
     <>
-    <section className="w-full bg-[#050505] text-white py-16 md:py-24 relative">
+    <section className="w-full bg-[#050505] text-white py-12 md:py-12 relative">
       <div className="max-w-[1400px] mx-auto px-4 md:px-8">
         <div className="flex flex-col lg:flex-row gap-8 xl:gap-16">
 
@@ -65,7 +65,7 @@ export default function ContactSection({ data }: ContactSectionProps) {
                   <span className="text-red-600 font-bold tracking-[0.2em] text-xs uppercase">{data.subtitle}</span>
                   <div className="w-12 h-px bg-red-600/50" />
                 </motion.div>
-                <motion.h2 custom={1}  className="text-4xl md:text-5xl xl:text-6xl font-bold font-sans uppercase leading-[1.05] tracking-wide">
+                <motion.h2 custom={1}  className="text-[clamp(2.35rem,5vw,5.2rem)] md:text-6xl font-bold font-sans uppercase leading-[1.05] tracking-wide">
                   <span className="text-white">{data.titleLine1}</span><br />
                   <span className="text-red-600">{data.titleLine2}</span>
                 </motion.h2>

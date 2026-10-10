@@ -26,7 +26,7 @@ export default function Process({ data: processData }: ProcessProps) {
   };
 
   return (
-    <section className="w-full bg-[#050505] text-white py-24 relative overflow-hidden">
+    <section className="w-full bg-[#050505] text-white py-6 relative overflow-hidden">
       
       <div 
         className="absolute bottom-0 left-0 w-4/5 md:w-1/2 lg:w-[40%] h-[60%] lg:h-[75%] z-0 pointer-events-none" 
@@ -61,7 +61,7 @@ export default function Process({ data: processData }: ProcessProps) {
               <div className="w-16 h-[2px] bg-red-600" />
             </motion.div>
             
-            <motion.h2 variants={itemVariants} className="text-5xl md:text-6xl font-bold font-sans uppercase leading-[1.05] tracking-wide mb-6">
+            <motion.h2 variants={itemVariants} className="text-[clamp(2.35rem,5vw,5.2rem)] md:text-6xl font-bold font-sans uppercase leading-[1.05] tracking-wide mb-6">
               <span className="text-white mr-4">{processData.titleLine1}</span>
               <span className="text-red-600">{processData.titleLine2}</span>
             </motion.h2>

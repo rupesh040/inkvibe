@@ -95,7 +95,7 @@ export default function About({ data: aboutData }: AboutProps) {
               <div className="w-16 h-[1px] bg-white/20" />
             </motion.div>
 
-            <motion.h2 variants={itemVariants} className="text-4xl md:text-5xl lg:text-6xl font-bold font-sans uppercase leading-[1.05] tracking-wide mb-8">
+            <motion.h2 variants={itemVariants} className="text-[clamp(2.35rem,5vw,5.2rem)] md:text-6xl font-bold font-sans uppercase leading-[1.05] tracking-wide mb-8">
               <span className="text-white block">{aboutData.titleLine1}</span>
               <span className="text-red-600 block">{aboutData.titleLine2}</span>
             </motion.h2>
@@ -107,12 +107,12 @@ export default function About({ data: aboutData }: AboutProps) {
               {aboutData.description2}
             </motion.p>
 
-            <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-12 gap-y-8 sm:gap-y-0 w-full mt-4 flex-wrap lg:flex-nowrap gap-x-4 lg:gap-x-6">
+            <motion.div variants={itemVariants} className="grid grid-cols-2 sm:flex items-center justify-between mb-12 gap-y-6 gap-x-4 sm:gap-y-0 w-full mt-4 flex-wrap lg:flex-nowrap lg:gap-x-6">
               {aboutData.features.map((feature: AboutFeature, idx: number) => {
                 const IconComponent = IconMap[feature.icon] || Gem;
                 return (
                   <React.Fragment key={idx}>
-                    <div className="flex items-center space-x-4 lg:space-x-5 group cursor-default">
+                    <div className="flex items-center space-x-3 sm:space-x-4 lg:space-x-5 group cursor-default">
                       <div className="w-12 h-12 md:w-14 md:h-14 rounded-full border border-red-600/60 bg-gradient-to-br from-[#1a0a0a] to-black flex items-center justify-center flex-shrink-0 shadow-[0_0_15px_rgba(220,38,38,0.15)] group-hover:shadow-[0_0_20px_rgba(220,38,38,0.4)] transition-all duration-300 relative overflow-hidden">
                         <div className="absolute inset-0 bg-red-600/20 scale-0 group-hover:scale-100 transition-transform duration-300 rounded-full" />
                         <IconComponent className="w-5 h-5 md:w-6 md:h-6 text-red-600 relative z-10" strokeWidth={1.5} />

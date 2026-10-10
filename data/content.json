@@ -264,6 +264,7 @@
             "titleLine1": "MEET OUR",
             "titleLine2": "ARTISTS",
             "description": "Our talented and experienced artists are passionate about creating unique tattoos that tell your story. Each artist brings their own style and expertise to ensure a personalized and exceptional experience.",
+            "itemsPerPage": 8,
             "members": [
               {
                 "id": "alex-carter",

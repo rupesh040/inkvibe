@@ -68,7 +68,7 @@ export default function CTA({ data: ctaData }: CTAProps) {
             </h3>
           </motion.div>
           
-          <motion.h2 variants={itemVariants} className="text-5xl md:text-7xl font-bold font-sans uppercase leading-[1.05] tracking-wide mb-8">
+          <motion.h2 variants={itemVariants} className="text-[clamp(2.35rem,5vw,5.2rem)] md:text-7xl font-bold font-sans uppercase leading-[1.05] tracking-wide mb-8">
             <div className="text-white mb-2">{ctaData.titleLine1}</div>
             <div className="text-red-600">{ctaData.titleLine2}</div>
           </motion.h2>

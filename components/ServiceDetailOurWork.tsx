@@ -43,7 +43,7 @@ export default function ServiceDetailOurWork({
               {data.subtitle}
             </p>
 
-            <h2 className="text-3xl font-extrabold uppercase leading-none tracking-tight sm:text-4xl md:text-5xl">
+            <h2 className="text-[clamp(2.35rem,5vw,5.2rem)] md:text-6xl font-extrabold uppercase leading-none tracking-tight">
               {data.title}
             </h2>
           </motion.div>
