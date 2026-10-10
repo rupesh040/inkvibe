@@ -45,6 +45,7 @@
             "location": "452 Maple Ave, Apt 3B, Los Angeles, CA 90014",
             "phone": "+1 000-000-000",
             "email": "info@xyz.com",
+            "followUsLabel": "Follow Us :",
             "social": [
               {
                 "name": "Instagram",
@@ -933,6 +934,7 @@
             "subtitle": "OUR BLOGS",
             "titleLine1": "LATEST",
             "titleLine2": "BLOGS",
+            "readMoreText": "Read More",
             "blogs": [
               {
                 "image": "/blogs/blog-1.webp",

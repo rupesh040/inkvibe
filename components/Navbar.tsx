@@ -67,7 +67,7 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center space-x-4">
-          <span className="text-gray-300 font-medium">Follow Us :</span>
+          <span className="text-gray-300 font-medium">{(topBar as any).followUsLabel || 'Follow Us :'}</span>
           <div className="flex items-center space-x-2">
             {topBar.social.map((social, idx) => (
               <motion.div key={idx} whileHover={{ scale: 1.15, rotate: 5 }} whileTap={{ scale: 0.9 }}>

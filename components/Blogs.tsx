@@ -90,7 +90,7 @@ export default function Blogs({ data: blogsData, isBlogPage = false }: BlogsProp
                   <p className="text-neutral-400 text-sm leading-relaxed mb-8 flex-grow">{blog.description}</p>
                   <div className="inline-flex flex-col items-start mt-auto group/link">
                     <span className="flex items-center text-white font-bold text-[13px] tracking-widest uppercase mb-1">
-                      Read More 
+                      {(blogsData as any).readMoreText || 'Read More'} 
                       <span className="text-red-600 ml-2 transition-transform duration-300 group-hover/link:translate-x-1">→</span>
                     </span>
                     <span className="h-[2px] w-8 bg-red-600 transition-all duration-300 group-hover/link:w-full"></span>

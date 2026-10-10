@@ -95,7 +95,7 @@ export default function TeamDetailProfile({ member }: TeamDetailProfileProps) {
                 href="/contact"
                 className="bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-4 text-sm flex items-center transition-colors rounded-sm shadow-[0_0_15px_rgba(220,38,38,0.5)]"
               >
-                Book Appointment
+                {(member as any).bookButtonText || "Book Appointment"}
                 <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
             </motion.div>

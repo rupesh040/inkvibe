@@ -169,16 +169,16 @@ export default function Footer() {
       <div className="relative bg-[#030303]">
         <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-red-600/40 to-transparent shadow-[0_0_10px_rgba(220,38,38,0.3)]" />
         
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-6 flex flex-row md:flex-row items-center justify-between relative z-10">
-          <p className="text-xs text-gray-500 mb-4 md:mb-0">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16 py-6 flex flex-row items-center justify-between gap-4 relative z-10">
+          <p className="text-xs text-gray-500 leading-relaxed">
             {footerData.bottomBar.copyright}
           </p>
-          <div className="flex items-center space-x-6 text-xs text-gray-400">
+          <div className="flex items-center shrink-0 text-xs text-gray-400">
             <motion.button
               whileHover={{ scale: 1.1, backgroundColor: '#dc2626', color: '#fff' }}
               whileTap={{ scale: 0.9 }}
               onClick={scrollToTop}
-              className="ml-4 w-8 h-8 rounded-full border border-red-600 flex items-center justify-center text-red-500 hover:text-white transition-colors"
+              className="w-8 h-8 rounded-full border border-red-600 flex items-center justify-center text-red-500 hover:text-white transition-colors"
               aria-label="Scroll to top"
             >
               <ChevronUp className="w-4 h-4" />
