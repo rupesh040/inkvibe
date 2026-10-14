@@ -13,19 +13,35 @@ export default function ServiceDetailOurWork({
   const sliderRef = useRef<HTMLDivElement>(null);
 
   const scroll = (direction: "left" | "right") => {
-    if (!sliderRef.current) return;
-
     const container = sliderRef.current;
+    if (!container) return;
+
     const firstCard = container.firstElementChild as HTMLElement | null;
+    const gap = typeof window !== "undefined" && window.innerWidth >= 640 ? 16 : 12;
+    const cardWidth = firstCard ? firstCard.offsetWidth + gap : container.clientWidth * 0.8;
 
-    const cardWidth = firstCard
-      ? firstCard.getBoundingClientRect().width + 12
-      : container.clientWidth;
+    const maxScroll = container.scrollWidth - container.clientWidth;
+    const currentScroll = container.scrollLeft;
 
-    container.scrollBy({
-      left: direction === "right" ? cardWidth : -cardWidth,
-      behavior: "smooth",
-    });
+    if (direction === "right") {
+      if (currentScroll >= maxScroll - 15) {
+        container.scrollTo({ left: 0, behavior: "smooth" });
+      } else {
+        container.scrollTo({
+          left: Math.min(maxScroll, currentScroll + cardWidth),
+          behavior: "smooth",
+        });
+      }
+    } else {
+      if (currentScroll <= 15) {
+        container.scrollTo({ left: maxScroll, behavior: "smooth" });
+      } else {
+        container.scrollTo({
+          left: Math.max(0, currentScroll - cardWidth),
+          behavior: "smooth",
+        });
+      }
+    }
   };
 
   return (
@@ -55,7 +71,7 @@ export default function ServiceDetailOurWork({
               whileTap={{ scale: 0.92 }}
               onClick={() => scroll("left")}
               aria-label="Previous artworks"
-              className="flex h-9 w-9 items-center justify-center rounded-full border border-red-600/70 bg-transparent transition-colors hover:bg-red-600/10 sm:h-11 sm:w-11"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-red-600/70 bg-transparent transition-colors hover:bg-red-600/10 cursor-pointer sm:h-11 sm:w-11"
             >
               <ArrowLeft className="h-4 w-4 text-white sm:h-5 sm:w-5" />
             </motion.button>
@@ -69,7 +85,7 @@ export default function ServiceDetailOurWork({
               whileTap={{ scale: 0.92 }}
               onClick={() => scroll("right")}
               aria-label="Next artworks"
-              className="flex h-9 w-9 items-center justify-center rounded-full border border-red-600 bg-red-600 shadow-[0_0_12px_rgba(220,38,38,0.25)] transition-colors hover:bg-red-700 sm:h-11 sm:w-11"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-red-600 bg-red-600 shadow-[0_0_12px_rgba(220,38,38,0.25)] transition-colors hover:bg-red-700 cursor-pointer sm:h-11 sm:w-11"
             >
               <ArrowRight className="h-4 w-4 text-white sm:h-5 sm:w-5" />
             </motion.button>
@@ -78,7 +94,7 @@ export default function ServiceDetailOurWork({
 
         <div
           ref={sliderRef}
-          className="flex snap-x snap-mandatory gap-3 overflow-x-auto scroll-smooth pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:gap-4"
+          className="flex snap-x snap-mandatory gap-3 overflow-x-auto pb-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:gap-4"
         >
           {data.images.map((img: string, idx: number) => (
             <motion.div
@@ -91,7 +107,7 @@ export default function ServiceDetailOurWork({
                 delay: idx * 0.08,
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className="group relative aspect-[3/2] w-[78%] shrink-0 snap-start overflow-hidden border border-white/15 bg-neutral-950 sm:w-[48%] lg:w-[calc((100%-36px)/4)]"
+              className="group relative aspect-[3/2] w-[82%] shrink-0 snap-start overflow-hidden border border-white/15 bg-neutral-950 sm:w-[48%] lg:w-[calc((100%-32px)/3)]"
             >
               <Image
                 src={img}

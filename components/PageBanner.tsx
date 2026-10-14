@@ -19,7 +19,7 @@ export default function PageBanner({ pageName, data, customTitle, customBreadcru
   const breadcrumb = customBreadcrumb || pageData?.breadcrumb || ['Home', 'Details'];
 
   return (
-    <section className="font-bebas relative w-full h-[350px] md:h-[450px] lg:h-[500px] flex items-center justify-start overflow-hidden bg-[#050505]">
+    <section className="font-bebas relative w-full h-[200px] md:h-[260px] lg:h-[300px] flex items-center justify-start overflow-hidden bg-[#050505]">
       <div className="absolute inset-0 w-full h-full z-0">
         <Image
           src={data?.image || '/page-banner.webp'}
@@ -31,14 +31,14 @@ export default function PageBanner({ pageName, data, customTitle, customBreadcru
         <div className="absolute inset-0 bg-gradient-to-r from-[#050505] via-[#050505]/50 to-transparent" />
       </div>
 
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 lg:px-6 mt-16">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 lg:px-6 pt-4 md:pt-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="flex flex-col items-start"
         >
-          <div className="flex items-center space-x-2 text-xs md:text-sm tracking-widest text-red-600 mb-4 capitalize">
+          <div className="flex items-center space-x-2 text-xs md:text-sm tracking-widest text-red-600 mb-2 md:mb-3 capitalize">
             {breadcrumb.map((item, index) => (
               <React.Fragment key={index}>
                 <span>{item}</span>
@@ -53,7 +53,7 @@ export default function PageBanner({ pageName, data, customTitle, customBreadcru
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
-            className="text-[clamp(2.35rem,5vw,5.2rem)] md:text-6xl font-bold font-bebas text-white uppercase tracking-widest mb-6 leading-[1.05]"
+            className="text-[clamp(2rem,4vw,3.8rem)] md:text-5xl font-bold font-bebas text-white uppercase tracking-widest mb-3 md:mb-4 leading-[1.05]"
           >
             {title}
           </motion.h1>

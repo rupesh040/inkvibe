@@ -148,16 +148,11 @@ export default function Team({ data }: TeamProps) {
                   <div className="flex items-center space-x-3 mt-auto relative z-30">
                     {member.socials?.map((social: TeamSocialLink, sIdx: number) => {
                       const Icon = IconMap[social.platform?.toLowerCase()] || InstagramIcon;
-                      const isFirst = sIdx === 0;
                       return (
                         <Link 
                           href={social.url} 
                           key={sIdx}
-                          className={`w-9 h-9 rounded-full border flex items-center justify-center transition-all duration-300 ${
-                            isFirst 
-                              ? 'border-red-600/50 text-white hover:bg-red-600 hover:border-red-600' 
-                              : 'border-gray-700 text-gray-400 hover:border-red-600 hover:text-white'
-                          }`}
+                          className="w-9 h-9 rounded-full border border-white/20 text-gray-300 flex items-center justify-center transition-all duration-300 hover:bg-red-600 hover:border-red-600 hover:text-white hover:scale-105 cursor-pointer"
                           aria-label={social.platform || 'Social link'}
                         >
                           {social.svg ? (
@@ -220,12 +215,15 @@ export default function Team({ data }: TeamProps) {
             viewport={{ once: true }}
             className="flex justify-center mt-16"
           >
-            <Link href={teamData.buttonLink} className="relative group p-[1px] inline-flex items-center justify-center overflow-hidden">
-              <span className="absolute inset-[-1000%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,transparent_0%,#dc2626_50%,transparent_100%)] opacity-70 group-hover:opacity-100 transition-opacity duration-300" />
-              <div className="relative inline-flex items-center justify-center bg-[#050505] px-10 py-4 text-sm font-bold text-white uppercase tracking-widest transition-all duration-300 group-hover:bg-black group-hover:shadow-[0_0_20px_rgba(220,38,38,0.3)]">
+            <Link
+              href={teamData.buttonLink}
+              className="group relative inline-flex items-center justify-center bg-red-600 text-white px-8 py-4 text-sm font-bold tracking-wider uppercase overflow-hidden cursor-pointer shadow-[0_0_20px_rgba(220,38,38,0.3)] transition-all hover:shadow-[0_0_30px_rgba(220,38,38,0.6)]"
+            >
+              <span className="relative z-10 flex items-center">
                 {teamData.buttonText}
-                <ArrowRight className="ml-3 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300 text-red-600" />
-              </div>
+                <ArrowRight className="ml-3 w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+              </span>
+              <div className="absolute inset-0 bg-red-700 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300 ease-out" />
             </Link>
           </motion.div>
         )}

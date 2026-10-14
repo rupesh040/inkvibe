@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 
 export default function BlogDetailContent({ data, currentId }: { data: any; currentId?: string }) {
@@ -83,7 +84,7 @@ export default function BlogDetailContent({ data, currentId }: { data: any; curr
                   }, [])
                   .slice(0, 3)
                   .map((post: any, idx: number) => (
-                  <a key={idx} href={post.link} className="flex gap-4 group">
+                  <Link key={idx} href={post.link} className="flex gap-4 group cursor-pointer">
                     <div className="relative w-24 h-24 shrink-0 overflow-hidden border border-white/10">
                       <Image 
                         src={post.image} 
@@ -99,7 +100,7 @@ export default function BlogDetailContent({ data, currentId }: { data: any; curr
                       </h4>
                       <span className="text-xs text-gray-500">{post.date}</span>
                     </div>
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -109,17 +110,24 @@ export default function BlogDetailContent({ data, currentId }: { data: any; curr
                 {data.sidebar.categoriesTitle || "CATEGORIES"}
               </h3>
               <div className="flex flex-col border-t border-white/10">
-                {data.sidebar.categories.map((cat: any, idx: number) => (
-                  <a key={idx} href={cat.link} className="flex items-center justify-between py-4 border-b border-white/10 group hover:pl-2 transition-all">
-                    <div className="flex items-center gap-2 text-sm text-gray-400 group-hover:text-red-600 transition-colors">
-                      <span className="text-red-600 font-bold">&gt;</span>
-                      {cat.name}
-                    </div>
-                    <span className="text-sm text-gray-500 group-hover:text-white transition-colors">
-                      ({cat.count})
-                    </span>
-                  </a>
-                ))}
+                {data.sidebar.categories.map((cat: any, idx: number) => {
+                  const targetHref = `/blogs?category=${encodeURIComponent(cat.name)}`;
+                  return (
+                    <Link
+                      key={idx}
+                      href={targetHref}
+                      className="flex items-center justify-between py-4 border-b border-white/10 group hover:pl-2 transition-all cursor-pointer"
+                    >
+                      <div className="flex items-center gap-2 text-sm text-gray-400 group-hover:text-red-600 transition-colors">
+                        <span className="text-red-600 font-bold">&gt;</span>
+                        {cat.name}
+                      </div>
+                      <span className="text-sm text-gray-500 group-hover:text-white transition-colors">
+                        ({cat.count})
+                      </span>
+                    </Link>
+                  );
+                })}
               </div>
             </div>
 

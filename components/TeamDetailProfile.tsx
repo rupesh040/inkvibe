@@ -40,7 +40,6 @@ export default function TeamDetailProfile({ member }: TeamDetailProfileProps) {
           viewport={{ once: true }}
           className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-center"
         >
-          {/* Left Image */}
           <motion.div variants={itemVariants} className="w-full lg:w-[45%]">
             <div className="relative w-full aspect-square border-2 border-red-600/60 p-2 overflow-hidden shadow-[0_0_30px_rgba(220,38,38,0.15)] group">
               <div className="relative w-full h-full">
@@ -54,7 +53,6 @@ export default function TeamDetailProfile({ member }: TeamDetailProfileProps) {
             </div>
           </motion.div>
 
-          {/* Right Info */}
           <motion.div variants={itemVariants} className="w-full lg:w-[55%] flex flex-col">
             <h3 className="text-red-600 font-bold tracking-[0.2em] text-sm uppercase mb-2">
               {member.role}
@@ -95,7 +93,7 @@ export default function TeamDetailProfile({ member }: TeamDetailProfileProps) {
                 href="/contact"
                 className="bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-4 text-sm flex items-center transition-colors rounded-sm shadow-[0_0_15px_rgba(220,38,38,0.5)]"
               >
-                {(member as any).bookButtonText || "Book Appointment"}
+                {(member as any).bookButtonText || "Contact us"}
                 <ArrowRight className="ml-2 w-4 h-4" />
               </Link>
             </motion.div>

@@ -29,6 +29,7 @@ export default function Navbar() {
   const shared = typedContentData.Tattoo.templateComponents["template-1"].shared;
   const topBar = typedContentData.Tattoo.sections.Topbar.variants[shared.Topbar];
   const mainNav = typedContentData.Tattoo.sections.Header.variants[shared.Header];
+  const navLinks = mainNav.links.filter((link) => link.href !== '/contact');
 
   return (
     <header className="w-full bg-[#0a0a0a] text-white relative z-50">
@@ -101,7 +102,7 @@ export default function Navbar() {
         </div>
 
         <div className="hidden md:flex items-center space-x-8">
-          {mainNav.links.map((link, idx) => {
+          {navLinks.map((link, idx) => {
             const active = link.href === '/' ? pathname === '/' : pathname.startsWith(link.href);
             return (
               <div key={idx}>
@@ -176,7 +177,7 @@ export default function Navbar() {
             className="md:hidden bg-[#0a0a0a] border-t border-white/10 overflow-hidden"
           >
             <div className="flex flex-col px-6 py-4 space-y-4">
-              {mainNav.links.map((link, idx) => {
+              {navLinks.map((link, idx) => {
                 const active = link.href === '/' ? pathname === '/' : pathname.startsWith(link.href);
                 return (
                   <div key={idx}>

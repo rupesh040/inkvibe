@@ -105,13 +105,9 @@
               {
                 "name": "BLOGS",
                 "href": "/blogs"
-              },
-              {
-                "name": "CONTACT US",
-                "href": "/contact"
               }
             ],
-            "button": "BOOK APPOINTMENT"
+            "button": "CONTACT US"
           }
         }
       },
@@ -904,6 +900,16 @@
                 "text": "The entire team is so friendly and talented. They made me feel comfortable and the results are stunning. My tattoo looks exactly how I wanted. I'll definitely be coming back!",
                 "author": "LOYAL CLIENT",
                 "rating": 5
+              },
+              {
+                "text": "From consultation to the final needle stroke, everything was flawless. The hygiene standards and precision work gave me complete confidence. A truly remarkable tattoo studio.",
+                "author": "ALEX M.",
+                "rating": 5
+              },
+              {
+                "text": "Got a full sleeve session done here. The patience, artistry, and aftercare guidance were top notch. Everyone who sees my ink asks where I got it done!",
+                "author": "JORDAN T.",
+                "rating": 5
               }
             ]
           }
@@ -1318,7 +1324,9 @@
                   "/portfolio/tattoo-1.jpg",
                   "/portfolio/tattoo-2.jpg",
                   "/portfolio/tattoo-3.jpg",
-                  "/gallery/gallery-1.webp"
+                  "/gallery/gallery-1.webp",
+                  "/gallery/gallery-3.webp",
+                  "/gallery/gallery-5.webp"
                 ]
               }
             },
@@ -1369,7 +1377,9 @@
                   "/gallery/gallery-2.webp",
                   "/gallery/gallery-4.webp",
                   "/gallery/gallery-6.webp",
-                  "/gallery/gallery-8.webp"
+                  "/gallery/gallery-8.webp",
+                  "/gallery/gallery-1.webp",
+                  "/gallery/gallery-7.webp"
                 ]
               }
             },
@@ -1420,7 +1430,9 @@
                   "/gallery/gallery-3.webp",
                   "/gallery/gallery-5.webp",
                   "/gallery/gallery-7.webp",
-                  "/service/service-3.webp"
+                  "/service/service-3.webp",
+                  "/gallery/gallery-2.webp",
+                  "/gallery/gallery-4.webp"
                 ]
               }
             }
