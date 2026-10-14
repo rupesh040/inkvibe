@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Check } from 'lucide-react';
 import { motion, Variants } from 'framer-motion';
 import { AboutVariant } from '@/types';
 
@@ -97,11 +97,28 @@ export default function About({ data: aboutData, showButton = true }: AboutProps
             <motion.p variants={itemVariants} className="text-gray-400 text-sm md:text-base leading-relaxed mb-6">
               {aboutData.description1}
             </motion.p>
-            <motion.p variants={itemVariants} className="text-gray-400 text-sm md:text-base leading-relaxed mb-12">
+            <motion.p variants={itemVariants} className="text-gray-400 text-sm md:text-base leading-relaxed mb-8">
               {aboutData.description2}
             </motion.p>
 
-           
+            <motion.div variants={itemVariants} className="grid grid-cols-1 sm:grid-cols-2 gap-y-3.5 gap-x-6 mb-10">
+              {(aboutData.bulletPoints || [
+                "Custom Designs Tailored to Your Vision",
+                "Experienced & Certified Tattoo Artists",
+                "100% Sterile & Hospital-Grade Hygiene",
+                "Premium Quality Inks for Lasting Art"
+              ]).map((point: string, idx: number) => (
+                <div key={idx} className="flex items-center space-x-3 group">
+                  <div className="w-5 h-5 rounded-full bg-red-600/15 border border-red-600/60 flex items-center justify-center shrink-0 shadow-[0_0_8px_rgba(220,38,38,0.25)] group-hover:bg-red-600 transition-colors duration-300">
+                    <Check className="w-3 h-3 text-red-500 group-hover:text-white transition-colors duration-300" strokeWidth={2.5} />
+                  </div>
+                  <span className="text-gray-200 text-xs sm:text-sm font-medium tracking-wide leading-tight group-hover:text-white transition-colors">
+                    {point}
+                  </span>
+                </div>
+              ))}
+            </motion.div>
+
             {showButton && aboutData.buttonText && (
               <motion.a
                 variants={itemVariants}

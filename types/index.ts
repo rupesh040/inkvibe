@@ -52,6 +52,7 @@ export interface AboutVariant {
   description1: string;
   description2: string;
   features: AboutFeature[];
+  bulletPoints?: string[];
   buttonText: string;
   buttonLink: string;
   image1: string;
